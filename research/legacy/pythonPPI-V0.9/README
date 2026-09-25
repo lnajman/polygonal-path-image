@@ -1,0 +1,12 @@
+Pour exécuter le code il faut introduire quelques paramètres dans le fonction "example":
+
+Voting = 1 pour faire le "voting", 0 pour ne pas le faire
+tortuosityMin, entre 0 et 1 (degré de tortuosité)
+without_tortuosity= 1 pour éliminer la tortuosité, 0 pour ne pas le faire
+Orientation = 1 pour faire l'orientation, 0 pour ne pas le faire
+Pruning = 1 pour faire le "pruning", 0 pour ne pas le faire
+porcent, c'est un paramètre du "pruning" et il est le pourcentage de sommets d'un chemin qui sont plus près au chemin minimal qu'une distances donnée
+d, c'est autre paramètre du "pruning" et il est la distance donnée
+
+Paula
+

@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Please cite the original method and acknowledge Paula Agregán Reboredo's implementation when using this software."
+type: software
+title: Polygonal Path Image
+version: 0.1.0
+authors:
+  - family-names: Agregán Reboredo
+    given-names: Paula
+  - family-names: Najman
+    given-names: Laurent
+repository-code: "https://github.com/lnajman/polygonal-path-image"
+license: BSD-3-Clause
+preferred-citation:
+  type: conference-paper
+  title: "Curvilinear structure enhancement with the polygonal path image—Application to guide-wire segmentation in X-ray fluoroscopy"
+  authors:
+    - family-names: Bismuth
+      given-names: Vincent
+    - family-names: Vaillant
+      given-names: Régis
+    - family-names: Talbot
+      given-names: Hugues
+    - family-names: Najman
+      given-names: Laurent
+  year: 2012
+  conference:
+    name: MICCAI

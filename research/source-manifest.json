@@ -1,0 +1,152 @@
+[
+  {
+    "snapshot": "pythonPPI-V0.9",
+    "path": "PPIpython.c",
+    "bytes": 1106489,
+    "sha256": "3424f7d5c5278136d044b9abc63a6860d055a2cf239956ac7bc86ce35136069a"
+  },
+  {
+    "snapshot": "pythonPPI-V0.9",
+    "path": "PPIpython.pyx",
+    "bytes": 25707,
+    "sha256": "a99d8d7522cfabda02aba2bcff2f3846cd88185130a850bb3ac8d2fcff477975"
+  },
+  {
+    "snapshot": "pythonPPI-V0.9",
+    "path": "PPIpython.so",
+    "bytes": 416824,
+    "sha256": "103e86bd2699e53b0bce60bcc4000eb0b857fe7a7b07c17a1f53d46ef1e62f6d"
+  },
+  {
+    "snapshot": "pythonPPI-V0.9",
+    "path": "README",
+    "bytes": 633,
+    "sha256": "b426d4e585a7a5052f79e97983c3b1b5e101836870870fc0d25afcab54cdfb80"
+  },
+  {
+    "snapshot": "pythonPPI-V0.9",
+    "path": "build/temp.macosx-10.6-x86_64-2.7/PPIpython.o",
+    "bytes": 1404492,
+    "sha256": "ecfaa3b4571fdc6254554a1c63af7323a82e3bc119851c90ef3aa4a33bf6f584"
+  },
+  {
+    "snapshot": "pythonPPI-V0.9",
+    "path": "codeppi.zip",
+    "bytes": 5634,
+    "sha256": "7b3975d958cab34ddb09f3db1b4f57da45463e0846dd4afaddb9d7024bf41d84"
+  },
+  {
+    "snapshot": "pythonPPI-V0.9",
+    "path": "setup.py",
+    "bytes": 362,
+    "sha256": "852228d47201b1a203816f5eccb827d738caffd89c6ae8a9822f8045ad1de338"
+  },
+  {
+    "snapshot": "FinalVersion",
+    "path": "ChurchGradient.pgm",
+    "bytes": 154432,
+    "sha256": "d706d5fec66bfa1dc701003328cc2a8194a76ea3504ffdc8b279175584ae73f3"
+  },
+  {
+    "snapshot": "FinalVersion",
+    "path": "PFC_paris.pdf",
+    "bytes": 4338308,
+    "sha256": "b84348d65256ec35fcfaa8a269684e23b34629fe18a761c59fe719022d3bd6d1"
+  },
+  {
+    "snapshot": "FinalVersion",
+    "path": "PPIpython.c",
+    "bytes": 1238116,
+    "sha256": "c614e1810f65b36fc264c58bc783b95b1d610a1a75e20371f6ecc9ffc9d58483"
+  },
+  {
+    "snapshot": "FinalVersion",
+    "path": "PPIpython.pyx",
+    "bytes": 27690,
+    "sha256": "2263e3bf5208d97fce0be9f0f23f92de3adcb53083d8578c4d858a69c4098009"
+  },
+  {
+    "snapshot": "FinalVersion",
+    "path": "PPIpython.pyx~",
+    "bytes": 27655,
+    "sha256": "6263c39fdd90a6919a020a62c3e08d16b6260f0f02f8568352ead58e9bc5cd96"
+  },
+  {
+    "snapshot": "FinalVersion",
+    "path": "PPIpython.so",
+    "bytes": 453092,
+    "sha256": "1e00b1bd554cfa4fb96c04941e7dc69b1bad4ee14498de9add9904cfd1102318"
+  },
+  {
+    "snapshot": "FinalVersion",
+    "path": "PruebaDijkstra/.DS_Store",
+    "bytes": 6148,
+    "sha256": "d65165279105ca6773180500688df4bdc69a2c7b771752f0a46ef120b7fd8ec3"
+  },
+  {
+    "snapshot": "FinalVersion",
+    "path": "PruebaDijkstra/PruebaDijkstra.1",
+    "bytes": 3135,
+    "sha256": "e2dccf01931fc2e7eba8b574474f62ddfc07fc3fa18999ab39993015453fba16"
+  },
+  {
+    "snapshot": "FinalVersion",
+    "path": "PruebaDijkstra/dijkstraO.hh",
+    "bytes": 27871,
+    "sha256": "8d609b00caacc3d0c92d836e67f3904156e41be14711a8edd79c42876f22bdf9"
+  },
+  {
+    "snapshot": "FinalVersion",
+    "path": "PruebaDijkstra/main.cpp",
+    "bytes": 1620,
+    "sha256": "ba3097ab540b91d90274eca76d5aa549a7b32fdbbce3e7a52a4a1820ccba7390"
+  },
+  {
+    "snapshot": "FinalVersion",
+    "path": "PruebaDijkstra.zip",
+    "bytes": 9070,
+    "sha256": "32f72e59983a51ef07cbe882374bf91959320bd76c208612e2a1387fa22c3b18"
+  },
+  {
+    "snapshot": "FinalVersion",
+    "path": "build/temp.macosx-10.5-x86_64-2.7/PPIpython.o",
+    "bytes": 1346332,
+    "sha256": "29071ec1c1affce55d098909cb2b169e01ea38f40a447682dd03229dc454af8f"
+  },
+  {
+    "snapshot": "FinalVersion",
+    "path": "guiawires.pgm",
+    "bytes": 50454,
+    "sha256": "32eccb2349e3875753334df7c230c05f9f0660ecbee082f497e53f0bf415fd85"
+  },
+  {
+    "snapshot": "FinalVersion",
+    "path": "imageVote.npy",
+    "bytes": 1235288,
+    "sha256": "f88c1c8b1225de1f2937b09509c9b72880b73f7026c711af5c55f25a12f41b2a"
+  },
+  {
+    "snapshot": "FinalVersion",
+    "path": "imageVoteInver.npy",
+    "bytes": 1235288,
+    "sha256": "e7a204a0fa8911ab55711ffdd56681d264bdac339fe105670750e3f5ff0937aa"
+  },
+  {
+    "snapshot": "FinalVersion",
+    "path": "ppi_stats",
+    "bytes": 420354,
+    "sha256": "b7a62a3460ac65dff84d085a0c67924dc4867c40f86c4c07cdea0155e1ef3334"
+  },
+  {
+    "snapshot": "FinalVersion",
+    "path": "reportandcodes.zip",
+    "bytes": 3913932,
+    "sha256": "56a749f7746b78a5107bc2093056fe3a6c77de9491dbfaccfd77bd62d311d60d"
+  },
+  {
+    "snapshot": "FinalVersion",
+    "path": "setup.py",
+    "bytes": 362,
+    "sha256": "852228d47201b1a203816f5eccb827d738caffd89c6ae8a9822f8045ad1de338"
+  }
+]

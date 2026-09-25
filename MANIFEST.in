@@ -1,0 +1,9 @@
+include README.md LICENSE AUTHORS.md CITATION.cff CHANGELOG.md
+recursive-include src *.py *.pyx py.typed
+recursive-include tests *.py
+recursive-include docs *.md *.png
+recursive-include examples *.py
+prune research
+prune build
+prune dist
+global-exclude *.so *.pyd *.o .DS_Store
