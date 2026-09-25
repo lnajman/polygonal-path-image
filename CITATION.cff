@@ -3,7 +3,7 @@ message: "Please cite this software and the original PPI method listed in the re
 type: software
 title: Polygonal Path Image
 version: 0.1.0
-date-released: 2026-09-25
+date-released: "2026-09-25"
 authors:
   - family-names: Agregán Reboredo
     given-names: Paula

@@ -16,18 +16,23 @@ Version 0.1.0 is an initial research release of the later four-cone student
 implementation. It fixes a path reconstruction error in the historical source
 and has deterministic correctness tests. Full-resolution checks on both supplied
 example images preserve historical costs and validate every reconstructed path.
-See the [validation report and scientific scope](docs/validation.md) for the
+See the [validation report and scientific scope](https://github.com/lnajman/polygonal-path-image/blob/main/docs/validation.md) for the
 differences from the MICCAI method and the limits of these checks, and the
-[migration notes](docs/migration.md) for API changes.
+[migration notes](https://github.com/lnajman/polygonal-path-image/blob/main/docs/migration.md) for API changes.
 
 ## Install
 
 Requires Python 3.10 or later and NumPy 1.26 or later (including NumPy 2).
-Prebuilt wheels for CPython 3.10–3.14 on Linux x86-64, Windows x86-64, and macOS
-Intel/Apple Silicon are attached to [GitHub releases](https://github.com/lnajman/polygonal-path-image/releases).
-Download the wheel matching your Python version and platform, then install its
-local filename with `python -m pip install ./polygonal_path_image-....whl`.
-See [supported platforms and release details](docs/releasing.md).
+
+```sh
+python -m pip install polygonal-path-image
+```
+
+Prebuilt wheels cover CPython 3.10–3.14 on Linux x86-64, Windows x86-64, and
+macOS Intel/Apple Silicon. On these platforms, pip installs the compiled
+extension without a local C compiler. Wheels and the source archive are also
+attached to [GitHub releases](https://github.com/lnajman/polygonal-path-image/releases).
+See [supported platforms and release details](https://github.com/lnajman/polygonal-path-image/blob/main/docs/releasing.md).
 
 Installing from source also requires a C compiler: Xcode Command Line Tools on
 macOS, GCC/Clang on Linux, or Microsoft C++ Build Tools on Windows. Pip installs
@@ -45,8 +50,8 @@ cd polygonal-path-image
 python -m pip install .
 ```
 
-This project is not yet published on PyPI. NumPy is the only required runtime
-dependency. Pillow and Matplotlib are optional, used by the example script.
+NumPy is the only required runtime dependency. Pillow and Matplotlib are
+optional, used by the example and visualization scripts.
 
 ## Use
 
@@ -76,7 +81,7 @@ print(costs[16, 10])
 - Computation performs no file I/O or plotting and does not modify inputs.
 
 Additional functions are `bresenham_line`, `orientation`, and `prune_paths`.
-See the [API and algorithm conventions](docs/api.md).
+See the [API and algorithm conventions](https://github.com/lnajman/polygonal-path-image/blob/main/docs/api.md).
 
 ## Reproducible example
 
@@ -89,7 +94,7 @@ This generates its own synthetic image with a fixed random seed and saves a
 comparison figure and NumPy arrays. No historical image files are required.
 Use `--input path/to/image.png` to process a grayscale conversion of another image.
 
-![Synthetic input, minimum path costs, and filtered path votes](docs/assets/synthetic-example.png)
+![Synthetic input, minimum path costs, and filtered path votes](https://raw.githubusercontent.com/lnajman/polygonal-path-image/main/docs/assets/synthetic-example.png)
 
 ## Development
 
@@ -119,7 +124,7 @@ Package and original implementation authors: **Paula Agregán Reboredo**,
 **Vincent Bismuth**, and **Laurent Najman**. Paula developed the work as a student;
 Vincent and Laurent were her advisors and contributed to the code.
 Maintainer: **Laurent Najman**.
-See [AUTHORS.md](AUTHORS.md), [CITATION.cff](CITATION.cff), and
+See [AUTHORS.md](https://github.com/lnajman/polygonal-path-image/blob/main/AUTHORS.md), [CITATION.cff](https://github.com/lnajman/polygonal-path-image/blob/main/CITATION.cff), and
 [research provenance](https://github.com/lnajman/polygonal-path-image/blob/main/research/README.md).
 
 Original method: Vincent Bismuth, Régis Vaillant, Hugues Talbot, and Laurent Najman,
@@ -129,4 +134,4 @@ In *Medical Image Computing and Computer-Assisted Intervention – MICCAI 2012*,
 Part II, Lecture Notes in Computer Science **7511**, pp. **9–16**, Springer, 2012.
 DOI: [10.1007/978-3-642-33418-4_2](https://doi.org/10.1007/978-3-642-33418-4_2).
 
-The maintained code is distributed under the [BSD-3-Clause license](LICENSE).
+The maintained code is distributed under the [BSD-3-Clause license](https://github.com/lnajman/polygonal-path-image/blob/main/LICENSE).
