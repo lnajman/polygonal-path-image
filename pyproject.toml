@@ -62,7 +62,8 @@ extend-exclude = ["research", "build"]
 select = ["E4", "E7", "E9", "F", "I"]
 
 [tool.cibuildwheel]
-test-requires = ["pytest>=8", "numpy>=2,<3"]
+# Spaces ensure cibuildwheel quotes these requirements under Windows cmd.exe.
+test-requires = ["pytest >=8", "numpy >=2, <3"]
 test-command = "python -m pytest {project}/tests && python -m pip check"
 
 [tool.cibuildwheel.linux]
