@@ -106,7 +106,7 @@ more time than the compiled core; pruning may compare many pairs of paths.
 
 Original implementation: **Paula Agregán Reboredo**. Maintainer: **Laurent Najman**.
 See [AUTHORS.md](AUTHORS.md), [CITATION.cff](CITATION.cff), and
-[research provenance](research/README.md).
+[research provenance](https://github.com/lnajman/polygonal-path-image/blob/main/research/README.md).
 
 Original method: Vincent Bismuth, Régis Vaillant, Hugues Talbot, and Laurent Najman,
 *Curvilinear structure enhancement with the polygonal path image—Application to
