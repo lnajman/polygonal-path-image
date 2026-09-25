@@ -3,8 +3,9 @@
 [![Tests](https://github.com/lnajman/polygonal-path-image/actions/workflows/tests.yml/badge.svg)](https://github.com/lnajman/polygonal-path-image/actions/workflows/tests.yml)
 
 Find low-cost polygonal paths through grayscale images and turn them into path
-voting maps. This Python/Cython package modernizes Paula Agregán Reboredo's
-implementation of the Polygonal Path Image (PPI) method.
+voting maps. This Python/Cython package modernizes the implementation of the
+Polygonal Path Image (PPI) method by Paula Agregán Reboredo, Vincent Bismuth,
+and Laurent Najman.
 
 The core returns a minimum-cost path from every pixel, constrained to one of four
 cardinal cones. Lower pixel intensities are cheaper. Paths are useful for enhancing
@@ -104,7 +105,10 @@ more time than the compiled core; pruning may compare many pairs of paths.
 
 ## Authors and citation
 
-Original implementation: **Paula Agregán Reboredo**. Maintainer: **Laurent Najman**.
+Package and original implementation authors: **Paula Agregán Reboredo**,
+**Vincent Bismuth**, and **Laurent Najman**. Paula developed the work as a student;
+Vincent and Laurent were her advisors and contributed to the code.
+Maintainer: **Laurent Najman**.
 See [AUTHORS.md](AUTHORS.md), [CITATION.cff](CITATION.cff), and
 [research provenance](https://github.com/lnajman/polygonal-path-image/blob/main/research/README.md).
 

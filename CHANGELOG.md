@@ -2,7 +2,8 @@
 
 ## 0.1.0
 
-- Initial Python 3 package based on Paula Agregán Reboredo's FinalVersion snapshot.
+- Initial Python 3 package based on the FinalVersion implementation by
+  Paula Agregán Reboredo, Vincent Bismuth, and Laurent Najman.
 - Corrected path reconstruction with immutable dynamic-programming backpointers.
 - Added validated array-based computation and deterministic postprocessing APIs.
 - Added a synthetic example, migration guide, attribution, and citation metadata.
