@@ -1,8 +1,9 @@
 include README.md LICENSE AUTHORS.md CITATION.cff CHANGELOG.md
 recursive-include src *.py *.pyx py.typed
 recursive-include tests *.py
-recursive-include docs *.md *.png
+recursive-include docs *.md *.png *.json
 recursive-include examples *.py
+recursive-include scripts *.py
 prune research
 prune build
 prune dist

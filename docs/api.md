@@ -29,6 +29,11 @@ follows those layers rather than reading paths overwritten by neighboring pixels
 The legacy cost definition and tie rules are preserved. Impossible paths have
 infinite cost and all endpoints equal to `(-1, -1)`.
 
+The source intensity is omitted from the whole path's cost. Add
+`image.astype(float)` to the returned cost image if all-pixel cost rankings are
+needed across sources, for example before pruning. See the
+[paper comparison and validation](validation.md).
+
 ## bresenham_line(row0, col0, row1, col1)
 
 Returns a list of integer pixel coordinates, including both endpoints. Signed
@@ -50,6 +55,8 @@ score is the product of cosine values between every consecutive pair of segments
 including the first segment from the source pixel. A score below `threshold` is
 rejected. The threshold lies in `[-1, 1]`; paths with a zero-length segment are
 rejected. A nondegenerate one-segment path has score 1.
+Equality is retained with a small roundoff tolerance scaled to the number of
+turns; see the scientific comparison for the paper's strict threshold convention.
 
 ## orientation(costs, paths)
 

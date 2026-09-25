@@ -1,6 +1,7 @@
 # Polygonal Path Image
 
 [![Tests](https://github.com/lnajman/polygonal-path-image/actions/workflows/tests.yml/badge.svg)](https://github.com/lnajman/polygonal-path-image/actions/workflows/tests.yml)
+[![Wheels](https://github.com/lnajman/polygonal-path-image/actions/workflows/wheels.yml/badge.svg)](https://github.com/lnajman/polygonal-path-image/actions/workflows/wheels.yml)
 
 Find low-cost polygonal paths through grayscale images and turn them into path
 voting maps. This Python/Cython package modernizes the implementation of the
@@ -11,14 +12,23 @@ The core returns a minimum-cost path from every pixel, constrained to one of fou
 cardinal cones. Lower pixel intensities are cheaper. Paths are useful for enhancing
 dark curvilinear structures; voting highlights pixels visited by many paths.
 
-Version 0.1.0 is an initial research release. It fixes a path reconstruction error
-in the historical source and has deterministic correctness tests. It is not a
-bit-for-bit reproduction of the original demonstration scripts; see
-[migration notes](docs/migration.md).
+Version 0.1.0 is an initial research release of the later four-cone student
+implementation. It fixes a path reconstruction error in the historical source
+and has deterministic correctness tests. Full-resolution checks on both supplied
+example images preserve historical costs and validate every reconstructed path.
+See the [validation report and scientific scope](docs/validation.md) for the
+differences from the MICCAI method and the limits of these checks, and the
+[migration notes](docs/migration.md) for API changes.
 
 ## Install
 
 Requires Python 3.10 or later and NumPy 1.26 or later (including NumPy 2).
+Prebuilt wheels for CPython 3.10–3.14 on Linux x86-64, Windows x86-64, and macOS
+Intel/Apple Silicon are attached to [GitHub releases](https://github.com/lnajman/polygonal-path-image/releases).
+Download the wheel matching your Python version and platform, then install its
+local filename with `python -m pip install ./polygonal_path_image-....whl`.
+See [supported platforms and release details](docs/releasing.md).
+
 Installing from source also requires a C compiler: Xcode Command Line Tools on
 macOS, GCC/Clang on Linux, or Microsoft C++ Build Tools on Windows. Pip installs
 the Python build dependencies automatically in an isolated environment.

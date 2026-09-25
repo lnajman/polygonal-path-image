@@ -1,0 +1,1095 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-09-25T08:39:10.136543+00:00",
+  "script_sha256": "61cf6e70622f9ad7c1bf0386fcc92c97b8a3e896fa00e28f20015c5b7a1e6916",
+  "parameters": {
+    "segment_length": 3,
+    "nb_segments": 10,
+    "tortuosity_threshold": 0.75
+  },
+  "array_directory": "report-data",
+  "method": "Full resolution uint8 inputs without rescaling or preprocessing; every finite path checked with independent integer midpoint rasterization. Single timings are observations, not a controlled performance benchmark.",
+  "limitations": [
+    "Agreement with historical costs is a compatibility check, not an independent proof of optimality; the test suite supplies exhaustive small-image oracles.",
+    "The supplied images have no ground-truth labels here. No paper figure, clinical accuracy, sensitivity, specificity, or segmentation claim is reproduced.",
+    "The historical NPY outputs are not used because their producing parameters are unknown.",
+    "Orientation and pruning were intentionally redesigned and are not compared numerically to the historical plotting and local-pruning routines."
+  ],
+  "cases": [
+    {
+      "name": "synthetic_curve_seed_2012",
+      "shape": [
+        64,
+        80
+      ],
+      "dtype": "uint8",
+      "source_file": null,
+      "source_file_sha256": null,
+      "pixel_sha256": "52f0577dd6085d84f774f12bccd5f275747c3754e4a1c29a092584f4f3045297",
+      "input_artifact": "00-synthetic_curve_seed_2012-input.npy",
+      "modern": {
+        "environment": {
+          "python": "3.11.5 (main, Sep 11 2023, 08:31:25) [Clang 14.0.6 ]",
+          "executable": "python",
+          "numpy": "2.4.6",
+          "platform": "macOS-14.6-arm64-arm-64bit",
+          "machine": "arm64",
+          "module_file": "__init__.py",
+          "kernel_sha256": "439a53f8032b5b04000f22c4e7e1e118171a4f85ca3149732e70178a33a8fcd3",
+          "package_version": "0.1.0",
+          "implementation_source_sha256": {
+            "__init__.py": "a046cf46e1ea7e1be3400a6b8ddaac8655cb16fbd2aa8e0305a0732793ff6d85",
+            "core.py": "ced63211570c71131c1bd1772274935e610bac15e3fb763566a3c4889097fb60",
+            "_core.pyx": "a16a757f18bd18ba77eaa8f3c4750c26a997cf4c3461db9e4cdf45b6afb8c2da",
+            "postprocess.py": "2f7dc979b7be413d96058620b770e9cbc58d938127df253c967f1eaf903844b4"
+          }
+        },
+        "timings": {
+          "compute_ppi_seconds": 0.007812291034497321,
+          "independent_path_audit_seconds": 0.014840207993984222,
+          "postprocessing_seconds": 0.2991965418914333,
+          "worker_wall_seconds": 0.5619207080453634
+        },
+        "path_audit": {
+          "finite_paths": 5120,
+          "invalid_endpoint_paths": 0,
+          "invalid_geometry_paths": 0,
+          "inconsistent_path_costs": 0,
+          "max_absolute_path_cost_error": 0.0,
+          "first_inconsistencies": [],
+          "votes_match_independent_rasterization": true
+        },
+        "peak_rss_bytes": 45891584,
+        "ru_maxrss_raw": 45891584,
+        "ru_maxrss_unit": "bytes",
+        "peak_rss_scope": "worker lifetime including imports, core, postprocessing and audit",
+        "artifact": "00-synthetic_curve_seed_2012-modern.npz"
+      },
+      "correctness_checks_passed": true,
+      "legacy": {
+        "environment": {
+          "python": "3.11.5 (main, Sep 11 2023, 08:31:25) [Clang 14.0.6 ]",
+          "executable": "python3.11",
+          "numpy": "1.26.4",
+          "platform": "macOS-14.6-arm64-arm-64bit",
+          "machine": "arm64",
+          "module_file": "PPIpython.cpython-311-darwin.so",
+          "kernel_sha256": "52095706ac219f9bceda3aed0950b0a7680257425f295e7a7925b60a2149408a",
+          "compatibility_source_sha256": "bc6314e263e1f25cd48c4f643696fc2649307cc0c26c50786908f2a36da4595f",
+          "compatibility_transformations": "Added Cython language_level=2 directive. Replaced Python-level np.int aliases with np.int_ and np.float aliases with np.float64; Cython np.int_t and np.float_t unchanged. No algorithm changes.\nCast pruning local tam to int to satisfy current Cython range bounds; pruning not exercised by probes.\n"
+        },
+        "timings": {
+          "compute_ppi_seconds": 0.2484084579627961,
+          "independent_path_audit_seconds": 0.009894333081319928,
+          "postprocessing_seconds": 0.024308583000674844,
+          "worker_wall_seconds": 1.1602909578941762
+        },
+        "path_audit": {
+          "finite_paths": 5120,
+          "invalid_endpoint_paths": 0,
+          "invalid_geometry_paths": 0,
+          "inconsistent_path_costs": 531,
+          "max_absolute_path_cost_error": 325.0,
+          "first_inconsistencies": [
+            {
+              "source": [
+                1,
+                36
+              ],
+              "reported_cost": 5008.0,
+              "recomputed_cost": 5013.0,
+              "endpoints": [
+                [
+                  4,
+                  39
+                ],
+                [
+                  7,
+                  42
+                ],
+                [
+                  10,
+                  45
+                ],
+                [
+                  13,
+                  48
+                ],
+                [
+                  16,
+                  51
+                ],
+                [
+                  19,
+                  54
+                ],
+                [
+                  22,
+                  57
+                ],
+                [
+                  25,
+                  60
+                ],
+                [
+                  23,
+                  63
+                ],
+                [
+                  22,
+                  66
+                ]
+              ]
+            },
+            {
+              "source": [
+                2,
+                32
+              ],
+              "reported_cost": 5108.0,
+              "recomputed_cost": 5115.0,
+              "endpoints": [
+                [
+                  5,
+                  35
+                ],
+                [
+                  8,
+                  38
+                ],
+                [
+                  11,
+                  41
+                ],
+                [
+                  14,
+                  44
+                ],
+                [
+                  17,
+                  47
+                ],
+                [
+                  20,
+                  50
+                ],
+                [
+                  23,
+                  53
+                ],
+                [
+                  26,
+                  56
+                ],
+                [
+                  25,
+                  59
+                ],
+                [
+                  23,
+                  62
+                ]
+              ]
+            },
+            {
+              "source": [
+                2,
+                33
+              ],
+              "reported_cost": 5042.0,
+              "recomputed_cost": 5047.0,
+              "endpoints": [
+                [
+                  5,
+                  36
+                ],
+                [
+                  8,
+                  39
+                ],
+                [
+                  11,
+                  42
+                ],
+                [
+                  14,
+                  45
+                ],
+                [
+                  17,
+                  48
+                ],
+                [
+                  20,
+                  51
+                ],
+                [
+                  23,
+                  54
+                ],
+                [
+                  26,
+                  57
+                ],
+                [
+                  24,
+                  60
+                ],
+                [
+                  24,
+                  63
+                ]
+              ]
+            },
+            {
+              "source": [
+                2,
+                36
+              ],
+              "reported_cost": 4946.0,
+              "recomputed_cost": 4951.0,
+              "endpoints": [
+                [
+                  5,
+                  39
+                ],
+                [
+                  8,
+                  42
+                ],
+                [
+                  11,
+                  45
+                ],
+                [
+                  14,
+                  48
+                ],
+                [
+                  17,
+                  51
+                ],
+                [
+                  20,
+                  54
+                ],
+                [
+                  23,
+                  57
+                ],
+                [
+                  25,
+                  60
+                ],
+                [
+                  23,
+                  63
+                ],
+                [
+                  22,
+                  66
+                ]
+              ]
+            },
+            {
+              "source": [
+                3,
+                32
+              ],
+              "reported_cost": 5012.0,
+              "recomputed_cost": 5019.0,
+              "endpoints": [
+                [
+                  6,
+                  35
+                ],
+                [
+                  9,
+                  38
+                ],
+                [
+                  12,
+                  41
+                ],
+                [
+                  15,
+                  44
+                ],
+                [
+                  18,
+                  47
+                ],
+                [
+                  21,
+                  50
+                ],
+                [
+                  24,
+                  53
+                ],
+                [
+                  27,
+                  56
+                ],
+                [
+                  25,
+                  59
+                ],
+                [
+                  23,
+                  62
+                ]
+              ]
+            }
+          ]
+        },
+        "peak_rss_bytes": 79347712,
+        "ru_maxrss_raw": 79347712,
+        "ru_maxrss_unit": "bytes",
+        "peak_rss_scope": "worker lifetime including imports, core, postprocessing and audit",
+        "artifact": "00-synthetic_curve_seed_2012-legacy.npz"
+      },
+      "comparison": {
+        "cost_arrays_exactly_equal": true,
+        "finite_masks_equal": true,
+        "different_cost_pixels": 0,
+        "max_absolute_cost_difference": 0.0,
+        "different_finite_path_coordinates": 531,
+        "voting_on_identical_corrected_paths": {
+          "legacy_votes_equal_modern_with_border_2": true,
+          "legacy_inverse_minus_modern_border_2_inverse_unique": [
+            0
+          ],
+          "modern_uncleared_maximum": 1808,
+          "cleared_maximum": 1808
+        },
+        "tortuosity_on_identical_corrected_paths": {
+          "threshold": "recorded in report parameters",
+          "modern_retained": 642,
+          "legacy_retained": 873,
+          "legacy_only_retained": 231,
+          "modern_only_retained": 0,
+          "different_decisions": 231
+        },
+        "raw_legacy_votes_different_from_corrected_votes_border_2": 477
+      }
+    },
+    {
+      "name": "guiawires",
+      "shape": [
+        144,
+        350
+      ],
+      "dtype": "uint8",
+      "source_file": "guiawires.pgm",
+      "source_file_sha256": "32eccb2349e3875753334df7c230c05f9f0660ecbee082f497e53f0bf415fd85",
+      "pixel_sha256": "05d6cb3cbe50e90d0c64d53f758f5cee160abfb3295adf6b75e6e071232c0b2d",
+      "input_artifact": "01-guiawires-input.npy",
+      "modern": {
+        "environment": {
+          "python": "3.11.5 (main, Sep 11 2023, 08:31:25) [Clang 14.0.6 ]",
+          "executable": "python",
+          "numpy": "2.4.6",
+          "platform": "macOS-14.6-arm64-arm-64bit",
+          "machine": "arm64",
+          "module_file": "__init__.py",
+          "kernel_sha256": "439a53f8032b5b04000f22c4e7e1e118171a4f85ca3149732e70178a33a8fcd3",
+          "package_version": "0.1.0",
+          "implementation_source_sha256": {
+            "__init__.py": "a046cf46e1ea7e1be3400a6b8ddaac8655cb16fbd2aa8e0305a0732793ff6d85",
+            "core.py": "ced63211570c71131c1bd1772274935e610bac15e3fb763566a3c4889097fb60",
+            "_core.pyx": "a16a757f18bd18ba77eaa8f3c4750c26a997cf4c3461db9e4cdf45b6afb8c2da",
+            "postprocess.py": "2f7dc979b7be413d96058620b770e9cbc58d938127df253c967f1eaf903844b4"
+          }
+        },
+        "timings": {
+          "compute_ppi_seconds": 0.08294166601262987,
+          "independent_path_audit_seconds": 0.11479362496174872,
+          "postprocessing_seconds": 2.8396285419585183,
+          "worker_wall_seconds": 3.4949338330188766
+        },
+        "path_audit": {
+          "finite_paths": 50400,
+          "invalid_endpoint_paths": 0,
+          "invalid_geometry_paths": 0,
+          "inconsistent_path_costs": 0,
+          "max_absolute_path_cost_error": 0.0,
+          "first_inconsistencies": [],
+          "votes_match_independent_rasterization": true
+        },
+        "peak_rss_bytes": 124616704,
+        "ru_maxrss_raw": 124616704,
+        "ru_maxrss_unit": "bytes",
+        "peak_rss_scope": "worker lifetime including imports, core, postprocessing and audit",
+        "artifact": "01-guiawires-modern.npz"
+      },
+      "correctness_checks_passed": true,
+      "legacy": {
+        "environment": {
+          "python": "3.11.5 (main, Sep 11 2023, 08:31:25) [Clang 14.0.6 ]",
+          "executable": "python3.11",
+          "numpy": "1.26.4",
+          "platform": "macOS-14.6-arm64-arm-64bit",
+          "machine": "arm64",
+          "module_file": "PPIpython.cpython-311-darwin.so",
+          "kernel_sha256": "52095706ac219f9bceda3aed0950b0a7680257425f295e7a7925b60a2149408a",
+          "compatibility_source_sha256": "bc6314e263e1f25cd48c4f643696fc2649307cc0c26c50786908f2a36da4595f",
+          "compatibility_transformations": "Added Cython language_level=2 directive. Replaced Python-level np.int aliases with np.int_ and np.float aliases with np.float64; Cython np.int_t and np.float_t unchanged. No algorithm changes.\nCast pruning local tam to int to satisfy current Cython range bounds; pruning not exercised by probes.\n"
+        },
+        "timings": {
+          "compute_ppi_seconds": 3.151716124964878,
+          "independent_path_audit_seconds": 0.11505100002977997,
+          "postprocessing_seconds": 0.23552874999586493,
+          "worker_wall_seconds": 4.532661332981661
+        },
+        "path_audit": {
+          "finite_paths": 50400,
+          "invalid_endpoint_paths": 0,
+          "invalid_geometry_paths": 0,
+          "inconsistent_path_costs": 7128,
+          "max_absolute_path_cost_error": 200.0,
+          "first_inconsistencies": [
+            {
+              "source": [
+                4,
+                349
+              ],
+              "reported_cost": 4075.0,
+              "recomputed_cost": 4078.0,
+              "endpoints": [
+                [
+                  5,
+                  346
+                ],
+                [
+                  2,
+                  343
+                ],
+                [
+                  2,
+                  340
+                ],
+                [
+                  2,
+                  337
+                ],
+                [
+                  5,
+                  334
+                ],
+                [
+                  8,
+                  331
+                ],
+                [
+                  11,
+                  328
+                ],
+                [
+                  14,
+                  325
+                ],
+                [
+                  17,
+                  322
+                ],
+                [
+                  15,
+                  319
+                ]
+              ]
+            },
+            {
+              "source": [
+                5,
+                349
+              ],
+              "reported_cost": 4075.0,
+              "recomputed_cost": 4078.0,
+              "endpoints": [
+                [
+                  5,
+                  346
+                ],
+                [
+                  2,
+                  343
+                ],
+                [
+                  2,
+                  340
+                ],
+                [
+                  2,
+                  337
+                ],
+                [
+                  5,
+                  334
+                ],
+                [
+                  8,
+                  331
+                ],
+                [
+                  11,
+                  328
+                ],
+                [
+                  14,
+                  325
+                ],
+                [
+                  17,
+                  322
+                ],
+                [
+                  15,
+                  319
+                ]
+              ]
+            },
+            {
+              "source": [
+                6,
+                348
+              ],
+              "reported_cost": 4077.0,
+              "recomputed_cost": 4078.0,
+              "endpoints": [
+                [
+                  4,
+                  345
+                ],
+                [
+                  1,
+                  342
+                ],
+                [
+                  2,
+                  339
+                ],
+                [
+                  2,
+                  336
+                ],
+                [
+                  5,
+                  333
+                ],
+                [
+                  8,
+                  330
+                ],
+                [
+                  11,
+                  327
+                ],
+                [
+                  14,
+                  324
+                ],
+                [
+                  17,
+                  321
+                ],
+                [
+                  14,
+                  318
+                ]
+              ]
+            },
+            {
+              "source": [
+                6,
+                349
+              ],
+              "reported_cost": 4075.0,
+              "recomputed_cost": 4078.0,
+              "endpoints": [
+                [
+                  5,
+                  346
+                ],
+                [
+                  2,
+                  343
+                ],
+                [
+                  2,
+                  340
+                ],
+                [
+                  2,
+                  337
+                ],
+                [
+                  5,
+                  334
+                ],
+                [
+                  8,
+                  331
+                ],
+                [
+                  11,
+                  328
+                ],
+                [
+                  14,
+                  325
+                ],
+                [
+                  17,
+                  322
+                ],
+                [
+                  15,
+                  319
+                ]
+              ]
+            },
+            {
+              "source": [
+                7,
+                347
+              ],
+              "reported_cost": 4080.0,
+              "recomputed_cost": 4081.0,
+              "endpoints": [
+                [
+                  4,
+                  344
+                ],
+                [
+                  1,
+                  341
+                ],
+                [
+                  1,
+                  338
+                ],
+                [
+                  4,
+                  335
+                ],
+                [
+                  7,
+                  332
+                ],
+                [
+                  10,
+                  329
+                ],
+                [
+                  13,
+                  326
+                ],
+                [
+                  16,
+                  323
+                ],
+                [
+                  16,
+                  320
+                ],
+                [
+                  14,
+                  317
+                ]
+              ]
+            }
+          ]
+        },
+        "peak_rss_bytes": 171261952,
+        "ru_maxrss_raw": 171261952,
+        "ru_maxrss_unit": "bytes",
+        "peak_rss_scope": "worker lifetime including imports, core, postprocessing and audit",
+        "artifact": "01-guiawires-legacy.npz"
+      },
+      "comparison": {
+        "cost_arrays_exactly_equal": true,
+        "finite_masks_equal": true,
+        "different_cost_pixels": 0,
+        "max_absolute_cost_difference": 0.0,
+        "different_finite_path_coordinates": 10796,
+        "voting_on_identical_corrected_paths": {
+          "legacy_votes_equal_modern_with_border_2": true,
+          "legacy_inverse_minus_modern_border_2_inverse_unique": [
+            0
+          ],
+          "modern_uncleared_maximum": 1830,
+          "cleared_maximum": 1830
+        },
+        "tortuosity_on_identical_corrected_paths": {
+          "threshold": "recorded in report parameters",
+          "modern_retained": 9102,
+          "legacy_retained": 11020,
+          "legacy_only_retained": 1918,
+          "modern_only_retained": 0,
+          "different_decisions": 1918
+        },
+        "raw_legacy_votes_different_from_corrected_votes_border_2": 11315
+      }
+    },
+    {
+      "name": "ChurchGradient",
+      "shape": [
+        321,
+        481
+      ],
+      "dtype": "uint8",
+      "source_file": "ChurchGradient.pgm",
+      "source_file_sha256": "d706d5fec66bfa1dc701003328cc2a8194a76ea3504ffdc8b279175584ae73f3",
+      "pixel_sha256": "b1da1133f7417f8a67d02f6cba497f7fb1e2242faef951fd44dc2bcddce91284",
+      "input_artifact": "02-ChurchGradient-input.npy",
+      "modern": {
+        "environment": {
+          "python": "3.11.5 (main, Sep 11 2023, 08:31:25) [Clang 14.0.6 ]",
+          "executable": "python",
+          "numpy": "2.4.6",
+          "platform": "macOS-14.6-arm64-arm-64bit",
+          "machine": "arm64",
+          "module_file": "__init__.py",
+          "kernel_sha256": "439a53f8032b5b04000f22c4e7e1e118171a4f85ca3149732e70178a33a8fcd3",
+          "package_version": "0.1.0",
+          "implementation_source_sha256": {
+            "__init__.py": "a046cf46e1ea7e1be3400a6b8ddaac8655cb16fbd2aa8e0305a0732793ff6d85",
+            "core.py": "ced63211570c71131c1bd1772274935e610bac15e3fb763566a3c4889097fb60",
+            "_core.pyx": "a16a757f18bd18ba77eaa8f3c4750c26a997cf4c3461db9e4cdf45b6afb8c2da",
+            "postprocess.py": "2f7dc979b7be413d96058620b770e9cbc58d938127df253c967f1eaf903844b4"
+          }
+        },
+        "timings": {
+          "compute_ppi_seconds": 0.25177054200321436,
+          "independent_path_audit_seconds": 0.3610909580020234,
+          "postprocessing_seconds": 9.554766041925177,
+          "worker_wall_seconds": 10.873625624924898
+        },
+        "path_audit": {
+          "finite_paths": 154401,
+          "invalid_endpoint_paths": 0,
+          "invalid_geometry_paths": 0,
+          "inconsistent_path_costs": 0,
+          "max_absolute_path_cost_error": 0.0,
+          "first_inconsistencies": [],
+          "votes_match_independent_rasterization": true
+        },
+        "peak_rss_bytes": 252018688,
+        "ru_maxrss_raw": 252018688,
+        "ru_maxrss_unit": "bytes",
+        "peak_rss_scope": "worker lifetime including imports, core, postprocessing and audit",
+        "artifact": "02-ChurchGradient-modern.npz"
+      },
+      "correctness_checks_passed": true,
+      "legacy": {
+        "environment": {
+          "python": "3.11.5 (main, Sep 11 2023, 08:31:25) [Clang 14.0.6 ]",
+          "executable": "python3.11",
+          "numpy": "1.26.4",
+          "platform": "macOS-14.6-arm64-arm-64bit",
+          "machine": "arm64",
+          "module_file": "PPIpython.cpython-311-darwin.so",
+          "kernel_sha256": "52095706ac219f9bceda3aed0950b0a7680257425f295e7a7925b60a2149408a",
+          "compatibility_source_sha256": "bc6314e263e1f25cd48c4f643696fc2649307cc0c26c50786908f2a36da4595f",
+          "compatibility_transformations": "Added Cython language_level=2 directive. Replaced Python-level np.int aliases with np.int_ and np.float aliases with np.float64; Cython np.int_t and np.float_t unchanged. No algorithm changes.\nCast pruning local tam to int to satisfy current Cython range bounds; pruning not exercised by probes.\n"
+        },
+        "timings": {
+          "compute_ppi_seconds": 8.91780537494924,
+          "independent_path_audit_seconds": 0.3252847499679774,
+          "postprocessing_seconds": 0.6906511660199612,
+          "worker_wall_seconds": 11.286086209001951
+        },
+        "path_audit": {
+          "finite_paths": 154401,
+          "invalid_endpoint_paths": 0,
+          "invalid_geometry_paths": 0,
+          "inconsistent_path_costs": 26795,
+          "max_absolute_path_cost_error": 1597.0,
+          "first_inconsistencies": [
+            {
+              "source": [
+                0,
+                111
+              ],
+              "reported_cost": 6091.0,
+              "recomputed_cost": 6297.0,
+              "endpoints": [
+                [
+                  2,
+                  114
+                ],
+                [
+                  1,
+                  117
+                ],
+                [
+                  1,
+                  120
+                ],
+                [
+                  4,
+                  123
+                ],
+                [
+                  7,
+                  126
+                ],
+                [
+                  10,
+                  129
+                ],
+                [
+                  13,
+                  132
+                ],
+                [
+                  16,
+                  135
+                ],
+                [
+                  16,
+                  138
+                ],
+                [
+                  15,
+                  141
+                ]
+              ]
+            },
+            {
+              "source": [
+                0,
+                112
+              ],
+              "reported_cost": 6093.0,
+              "recomputed_cost": 6208.0,
+              "endpoints": [
+                [
+                  2,
+                  115
+                ],
+                [
+                  1,
+                  118
+                ],
+                [
+                  1,
+                  121
+                ],
+                [
+                  4,
+                  124
+                ],
+                [
+                  7,
+                  127
+                ],
+                [
+                  10,
+                  130
+                ],
+                [
+                  13,
+                  133
+                ],
+                [
+                  16,
+                  136
+                ],
+                [
+                  16,
+                  139
+                ],
+                [
+                  15,
+                  142
+                ]
+              ]
+            },
+            {
+              "source": [
+                0,
+                113
+              ],
+              "reported_cost": 6094.0,
+              "recomputed_cost": 6132.0,
+              "endpoints": [
+                [
+                  2,
+                  116
+                ],
+                [
+                  1,
+                  119
+                ],
+                [
+                  2,
+                  122
+                ],
+                [
+                  5,
+                  125
+                ],
+                [
+                  8,
+                  128
+                ],
+                [
+                  11,
+                  131
+                ],
+                [
+                  14,
+                  134
+                ],
+                [
+                  17,
+                  137
+                ],
+                [
+                  15,
+                  140
+                ],
+                [
+                  15,
+                  143
+                ]
+              ]
+            },
+            {
+              "source": [
+                0,
+                114
+              ],
+              "reported_cost": 6080.0,
+              "recomputed_cost": 6185.0,
+              "endpoints": [
+                [
+                  2,
+                  117
+                ],
+                [
+                  1,
+                  120
+                ],
+                [
+                  4,
+                  123
+                ],
+                [
+                  7,
+                  126
+                ],
+                [
+                  10,
+                  129
+                ],
+                [
+                  13,
+                  132
+                ],
+                [
+                  16,
+                  135
+                ],
+                [
+                  16,
+                  138
+                ],
+                [
+                  15,
+                  141
+                ],
+                [
+                  18,
+                  144
+                ]
+              ]
+            },
+            {
+              "source": [
+                0,
+                115
+              ],
+              "reported_cost": 5994.0,
+              "recomputed_cost": 6003.0,
+              "endpoints": [
+                [
+                  1,
+                  118
+                ],
+                [
+                  1,
+                  121
+                ],
+                [
+                  4,
+                  124
+                ],
+                [
+                  7,
+                  127
+                ],
+                [
+                  10,
+                  130
+                ],
+                [
+                  13,
+                  133
+                ],
+                [
+                  16,
+                  136
+                ],
+                [
+                  16,
+                  139
+                ],
+                [
+                  15,
+                  142
+                ],
+                [
+                  17,
+                  145
+                ]
+              ]
+            }
+          ]
+        },
+        "peak_rss_bytes": 367296512,
+        "ru_maxrss_raw": 367296512,
+        "ru_maxrss_unit": "bytes",
+        "peak_rss_scope": "worker lifetime including imports, core, postprocessing and audit",
+        "artifact": "02-ChurchGradient-legacy.npz"
+      },
+      "comparison": {
+        "cost_arrays_exactly_equal": true,
+        "finite_masks_equal": true,
+        "different_cost_pixels": 0,
+        "max_absolute_cost_difference": 0.0,
+        "different_finite_path_coordinates": 30772,
+        "voting_on_identical_corrected_paths": {
+          "legacy_votes_equal_modern_with_border_2": true,
+          "legacy_inverse_minus_modern_border_2_inverse_unique": [
+            0
+          ],
+          "modern_uncleared_maximum": 2552,
+          "cleared_maximum": 2552
+        },
+        "tortuosity_on_identical_corrected_paths": {
+          "threshold": "recorded in report parameters",
+          "modern_retained": 17675,
+          "legacy_retained": 25338,
+          "legacy_only_retained": 7663,
+          "modern_only_retained": 0,
+          "different_decisions": 7663
+        },
+        "raw_legacy_votes_different_from_corrected_votes_border_2": 25115
+      }
+    }
+  ],
+  "correctness_checks_passed": true
+}

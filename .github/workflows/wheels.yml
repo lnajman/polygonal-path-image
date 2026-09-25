@@ -1,0 +1,161 @@
+name: Wheels
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ["v*"]
+  pull_request:
+    paths:
+      - ".github/workflows/wheels.yml"
+      - "pyproject.toml"
+      - "setup.py"
+      - "MANIFEST.in"
+      - "src/**"
+      - "tests/**"
+      - "scripts/check_release_artifacts.py"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wheels-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  sdist:
+    name: Build source distribution
+    runs-on: ubuntu-24.04
+    outputs:
+      filename: ${{ steps.package.outputs.filename }}
+      version: ${{ steps.package.outputs.version }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+      - run: python -m pip install build twine
+      - name: Check release tag and package version
+        env:
+          RELEASE_REF: ${{ github.ref }}
+        run: |
+          python - <<'PY'
+          import os
+          import tomllib
+          from pathlib import Path
+
+          version = tomllib.loads(Path("pyproject.toml").read_text())["project"]["version"]
+          ref = os.environ["RELEASE_REF"]
+          if ref.startswith("refs/tags/") and ref != f"refs/tags/v{version}":
+              raise SystemExit(f"Tag {ref!r} does not match package version {version!r}")
+          PY
+      - name: Build in an isolated environment
+        run: python -m build --sdist
+      - run: python -m twine check --strict dist/*
+      - name: Record source distribution
+        id: package
+        run: |
+          python - <<'PY'
+          import os
+          import tomllib
+          from pathlib import Path
+
+          files = list(Path("dist").glob("*.tar.gz"))
+          if len(files) != 1:
+              raise SystemExit(f"Expected one source distribution, found {len(files)}")
+          version = tomllib.loads(Path("pyproject.toml").read_text())["project"]["version"]
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
+              output.write(f"filename={files[0].name}\nversion={version}\n")
+          PY
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: sdist
+          path: dist/*.tar.gz
+          if-no-files-found: error
+          retention-days: 30
+
+  wheels:
+    name: ${{ matrix.platform }} / CPython 3.10–3.14
+    needs: sdist
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-24.04
+            platform: linux-x86_64
+            arch: x86_64
+            build: "cp3{10,11,12,13,14}-manylinux_x86_64"
+          - os: windows-2022
+            platform: windows-x86_64
+            arch: AMD64
+            build: "cp3{10,11,12,13,14}-win_amd64"
+          - os: macos-15-intel
+            platform: macos-x86_64
+            arch: x86_64
+            build: "cp3{10,11,12,13,14}-macosx_x86_64"
+          - os: macos-14
+            platform: macos-arm64
+            arch: arm64
+            build: "cp3{10,11,12,13,14}-macosx_arm64"
+    steps:
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: sdist
+          path: source
+      # These native hosted runners provide MSVC/Xcode; Linux compiles inside
+      # cibuildwheel's manylinux_2_28 image. No cross-compiled wheel goes untested.
+      - name: Build and test wheels from the source distribution
+        uses: pypa/cibuildwheel@e090b81e30c4d855ea63bf4b6e59204c09a101ae # v4.2.1
+        with:
+          package-dir: source/${{ needs.sdist.outputs.filename }}
+          output-dir: wheelhouse
+        env:
+          CIBW_BUILD: ${{ matrix.build }}
+          CIBW_ARCHS: ${{ matrix.arch }}
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: wheels-${{ matrix.platform }}
+          path: wheelhouse/*.whl
+          if-no-files-found: error
+          retention-days: 30
+
+  release-artifacts:
+    name: Check complete release artifacts
+    needs: [sdist, wheels]
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: sdist
+          path: dist
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          pattern: wheels-*
+          path: dist
+          merge-multiple: true
+      - run: python -m pip install twine
+      - run: python -m twine check --strict dist/*
+      - name: Verify all 20 wheels and source metadata; generate checksums
+        env:
+          PACKAGE_VERSION: ${{ needs.sdist.outputs.version }}
+        run: >-
+          python scripts/check_release_artifacts.py dist
+          --version "$PACKAGE_VERSION" --complete --write-checksums
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: release-dist
+          path: dist/*
+          if-no-files-found: error
+          retention-days: 90
+      - name: Summarize available distributions
+        run: |
+          printf 'Built and tested 20 wheels for CPython 3.10–3.14, plus one source distribution.\n\n' >> "$GITHUB_STEP_SUMMARY"
+          printf 'Download the **release-dist** artifact for GitHub release assets and SHA256SUMS.\n' >> "$GITHUB_STEP_SUMMARY"
