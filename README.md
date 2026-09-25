@@ -113,7 +113,10 @@ See [AUTHORS.md](AUTHORS.md), [CITATION.cff](CITATION.cff), and
 [research provenance](https://github.com/lnajman/polygonal-path-image/blob/main/research/README.md).
 
 Original method: Vincent Bismuth, Régis Vaillant, Hugues Talbot, and Laurent Najman,
-*Curvilinear structure enhancement with the polygonal path image—Application to
-guide-wire segmentation in X-ray fluoroscopy*, MICCAI 2012.
+[*Curvilinear Structure Enhancement with the Polygonal Path Image - Application
+to Guide-Wire Segmentation in X-Ray Fluoroscopy*](https://hal.science/hal-00741956v1/).
+In *Medical Image Computing and Computer-Assisted Intervention – MICCAI 2012*,
+Part II, Lecture Notes in Computer Science **7511**, pp. **9–16**, Springer, 2012.
+DOI: [10.1007/978-3-642-33418-4_2](https://doi.org/10.1007/978-3-642-33418-4_2).
 
 The maintained code is distributed under the [BSD-3-Clause license](LICENSE).

@@ -14,7 +14,7 @@ repository-code: "https://github.com/lnajman/polygonal-path-image"
 license: BSD-3-Clause
 references:
   - type: conference-paper
-    title: "Curvilinear structure enhancement with the polygonal path image—Application to guide-wire segmentation in X-ray fluoroscopy"
+    title: "Curvilinear Structure Enhancement with the Polygonal Path Image - Application to Guide-Wire Segmentation in X-Ray Fluoroscopy"
     authors:
       - family-names: Bismuth
         given-names: Vincent
@@ -25,5 +25,13 @@ references:
       - family-names: Najman
         given-names: Laurent
     year: 2012
+    collection-title: "Medical Image Computing and Computer-Assisted Intervention – MICCAI 2012, Part II"
+    volume: 7511
+    start: 9
+    end: 16
+    doi: "10.1007/978-3-642-33418-4_2"
+    url: "https://hal.science/hal-00741956v1/"
+    publisher:
+      name: Springer Berlin Heidelberg
     conference:
       name: MICCAI

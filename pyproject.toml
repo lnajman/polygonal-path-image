@@ -41,6 +41,7 @@ dev = ["pytest>=8", "build>=1.2", "ruff>=0.11", "twine>=6"]
 Repository = "https://github.com/lnajman/polygonal-path-image"
 Issues = "https://github.com/lnajman/polygonal-path-image/issues"
 Changelog = "https://github.com/lnajman/polygonal-path-image/blob/main/CHANGELOG.md"
+"Reference paper" = "https://hal.science/hal-00741956v1/"
 
 [tool.setuptools.packages.find]
 where = ["src"]

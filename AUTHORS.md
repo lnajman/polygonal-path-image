@@ -22,7 +22,10 @@ kept in `research/legacy/` for provenance and are not imported by the package or
 included in its wheel or source distribution.
 
 The polygonal path image method is described by Vincent Bismuth, Régis Vaillant,
-Hugues Talbot, and Laurent Najman in *Curvilinear structure enhancement with the
-polygonal path image—Application to guide-wire segmentation in X-ray fluoroscopy*,
-MICCAI 2012. This package follows the original four-cone implementation; it does not
+Hugues Talbot, and Laurent Najman in
+[*Curvilinear Structure Enhancement with the Polygonal Path Image - Application
+to Guide-Wire Segmentation in X-Ray Fluoroscopy*](https://hal.science/hal-00741956v1/),
+MICCAI 2012, Part II, LNCS 7511, pp. 9–16.
+DOI: [10.1007/978-3-642-33418-4_2](https://doi.org/10.1007/978-3-642-33418-4_2).
+This package follows the original four-cone implementation; it does not
 claim to reproduce every variant in the original research.
