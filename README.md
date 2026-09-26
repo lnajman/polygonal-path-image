@@ -135,6 +135,13 @@ The [executed companion](https://github.com/lnajman/polygonal-path-image/blob/ma
 provides inspectable results. This is a controlled synthetic study, not clinical
 validation or a reproduction of MICCAI 2012.
 
+The [path-stage diagnostics](https://github.com/lnajman/polygonal-path-image/blob/main/docs/benchmarks/diagnostics/README.md)
+explain how a strong neighbour attracts weak-line paths before tortuosity
+filtering, and why a blank image still has nonzero votes. They distinguish
+expected path occupancy from thresholded line detection, quantify finite-image
+boundary effects, and test a separate experimental fallback without changing
+the released API or defaults.
+
 ## Development
 
 ```sh

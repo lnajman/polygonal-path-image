@@ -10,8 +10,12 @@ on:
       - "examples/ppi_synthetic_benchmark.ipynb"
       - "examples/ppi_guide3d_study.ipynb"
       - "examples/ppi_multiline_study.ipynb"
+      - "examples/ppi_path_diagnostics.ipynb"
       - "tests/test_guide3d*"
       - "tests/test_multiline*"
+      - "tests/test_*diagnostic*"
+      - "tests/test_straight_fallback.py"
+      - "tests/test_fallback_validation.py"
       - "src/**"
       - "pyproject.toml"
       - "MANIFEST.in"
@@ -23,8 +27,12 @@ on:
       - "examples/ppi_synthetic_benchmark.ipynb"
       - "examples/ppi_guide3d_study.ipynb"
       - "examples/ppi_multiline_study.ipynb"
+      - "examples/ppi_path_diagnostics.ipynb"
       - "tests/test_guide3d*"
       - "tests/test_multiline*"
+      - "tests/test_*diagnostic*"
+      - "tests/test_straight_fallback.py"
+      - "tests/test_fallback_validation.py"
       - "src/**"
       - "pyproject.toml"
       - "MANIFEST.in"
@@ -49,6 +57,14 @@ jobs:
         run: python -m pytest tests/test_guide3d*.py
       - name: Verify complete-reference geometry and threshold fixtures
         run: python -m pytest tests/test_multiline*.py
+      - name: Verify path diagnostics and experimental fallback
+        run: >-
+          python -m pytest tests/test_*diagnostic*.py
+          tests/test_straight_fallback.py tests/test_fallback_validation.py
+      - name: Reconcile costs and votes on one complete paired context
+        run: >-
+          python -m benchmarks.diagnose_weak_paths --context-limit 1
+          --output benchmark-output/weak-paths-smoke.json
       - name: Exercise the benchmark runner on a bounded panel
         run: python -m benchmarks.run_synthetic --suite smoke --output benchmark-output/smoke.json
       - name: Exercise development calibration and held-out multi-line evaluation
@@ -74,6 +90,12 @@ jobs:
           --ExecutePreprocessor.timeout=180 --ExecutePreprocessor.kernel_name=python3
           --output ppi_multiline_study.executed.ipynb --output-dir benchmark-output
           examples/ppi_multiline_study.ipynb
+      - name: Execute the path-stage diagnostic companion
+        run: >-
+          python -m nbconvert --execute --to notebook
+          --ExecutePreprocessor.timeout=180 --ExecutePreprocessor.kernel_name=python3
+          --output ppi_path_diagnostics.executed.ipynb --output-dir benchmark-output
+          examples/ppi_path_diagnostics.ipynb
       - name: Preserve executed tutorial and smoke results
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:

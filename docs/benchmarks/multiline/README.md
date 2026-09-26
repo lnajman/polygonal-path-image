@@ -125,6 +125,12 @@ The high blank response is compatible with the pooled calibration rule: its
 individual image. The blank is only one member of that population. PPI votes
 therefore do not by themselves provide a reliable line-presence confidence.
 
+The subsequent [path-stage diagnostics](../diagnostics/README.md) explain this
+response: nonzero votes are expected because blank images have equal-cost
+admissible paths. The 7.84% high-threshold selection depends on finite-image
+boundaries and deterministic tie choices; moving those boundaries farther from
+the same ROI leaves a uniform nonzero baseline below that threshold.
+
 ![Selections on images without any intended line](assets/controls.png)
 
 All pixels in these controls are background. They use the same frozen scalar
@@ -307,7 +313,9 @@ meaningful response on images without lines. Changing tortuosity alone helped
 average coverage but left these failures. A useful next experiment would trace
 which paths leave the weak line for its neighbour, which survive tortuosity
 filtering, and how their votes accumulate. That is a hypothesis to investigate,
-not a cause established by this benchmark.
+not a cause established by this benchmark. The subsequent
+[path-stage investigation](../diagnostics/README.md) traces this mechanism and
+tests one limited experimental fallback on a fresh panel.
 
 Any resulting implementation change should preserve these examples as
 regression cases and be assessed on new, predeclared geometries and noise

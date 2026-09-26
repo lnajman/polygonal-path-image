@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Added source-path diagnostics for weak/strong-line pairs and uniform images,
+  with exact cost/vote reconciliation, boundary/tie controls and an executed
+  notebook. Clarified that nonzero blank votes are expected path occupancy.
+- Added a research-only straight-candidate fallback after tortuosity rejection,
+  with separate development calibration and a predefined fresh validation panel.
 - Added a complete-reference multi-line synthetic study with crossings, branches,
   mixed widths, paired weak/strong lines, development-frozen thresholds, Frangi
   and local-contrast comparisons, continuity metrics and blank/noise controls.

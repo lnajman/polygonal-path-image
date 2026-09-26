@@ -1,0 +1,14 @@
+{
+  "purpose": "Predeclared fresh evaluation if stage diagnosis supports an experimental correction; do not inspect candidate scores before freezing its definition.",
+  "base_geometry": "unchanged benchmarks.multiline_data.generate_multiline",
+  "evaluation_angles_degrees": [19, 53, 107],
+  "evaluation_seeds": [4101, 4102],
+  "noise_rule": "5 if angle_index + seed_index is even, otherwise 12",
+  "families": ["crossing", "branch", "parallel", "mixed_width", "curved_pair", "weak_alone", "weak_near_strong_gap6", "weak_near_strong_gap10"],
+  "line_scenes": 48,
+  "controls": "one uniform blank and both noise levels for each seed: five controls",
+  "development": "the original 21 multiline-v1 development scenes; existing diagnostic scenes may inform candidate design, never fresh evaluation",
+  "threshold_calibration": "per-method pooled development outside-support pixels at requested 0.1%, 0.5%, 1%, 2%; strict score > cutoff; primary0.5%",
+  "comparison": "unchanged raw/local PPI default and relaxed local PPI, direct local contrast and a single frozen experimental correction; report actual evaluation background rates",
+  "outcomes": "every-line and worst-line coverage, continuity, paired weak recovery, blank/noise controls; source and data hashes; report negative outcomes and do not retune on this panel"
+}
