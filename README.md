@@ -50,8 +50,8 @@ cd polygonal-path-image
 python -m pip install .
 ```
 
-NumPy is the only required runtime dependency. Pillow and Matplotlib are
-optional, used by the example and visualization scripts.
+NumPy is the only required runtime dependency. Pillow, Matplotlib and SciPy are
+optional, used by examples, figures and study tooling.
 
 ## Use
 
@@ -107,6 +107,17 @@ choices. Noise-only controls make the limits of fixed selection budgets visible.
 Open the [executed tutorial notebook](https://github.com/lnajman/polygonal-path-image/blob/main/examples/ppi_synthetic_benchmark.ipynb)
 to inspect the results or rerun the examples. These benchmark and tutorial files
 are available in the repository; they use the released `0.1.0` computation API.
+
+## Acquired-image study
+
+The [Guide3D pilot](https://github.com/lnajman/polygonal-path-image/blob/main/docs/benchmarks/guide3d/README.md)
+evaluates acquired fluoroscopic phantom images using manual guidewire polylines,
+an acquisition-separated development/evaluation split, and darkness and local
+contrast baselines. It includes a pinned dataset audit, a frozen protocol,
+per-view results and an
+[executed notebook](https://github.com/lnajman/polygonal-path-image/blob/main/examples/ppi_guide3d_study.ipynb).
+The original MICCAI 2012 clinical dataset was private; this is a separate phantom
+study. Guide3D images remain outside the repository under their own license.
 
 ## Development
 

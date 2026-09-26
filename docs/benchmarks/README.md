@@ -91,9 +91,10 @@ selects 0.20%–3.15%. A relative rank cutoff cannot establish that a guidewire 
 present. These controls motivate testing an absolute confidence or rejection
 criterion on separate development and evaluation data.
 
-The next scientific step is evaluation on annotated images with clutter,
-crossings, and discontinuities, including target-absent examples. The historical
-clinical dataset and annotations are not included in this repository. Neither
+The [Guide3D acquired-image pilot](guide3d/README.md) extends evaluation to
+annotated phantom images with clutter and overlapping structures. Target-absent
+acquired-image controls remain future work. The historical MICCAI 2012 clinical
+dataset was private and is unavailable for these studies. Neither
 these results nor their comparison with a simple intensity baseline establish
 MICCAI 2012 performance. Algorithm changes and new defaults should be assessed
 on a separate evaluation set; this panel already informed these observations.

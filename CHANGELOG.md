@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Added a Guide3D acquired-image phantom pilot with pinned data auditing,
+  acquisition-separated development/evaluation, local-contrast comparisons,
+  exact accelerated geometry metrics, scalar results and an executed notebook.
+- Added optional study dependencies and fixture/notebook CI without dataset downloads.
+- Clarified that the original MICCAI 2012 clinical dataset was private.
 - Added a reproducible synthetic benchmark with continuous reference curves,
   explicit selection budgets, noise-only controls, and an image-darkness baseline.
 - Added independent geometry/metric tests and a runnable parameter tutorial,

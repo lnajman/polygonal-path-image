@@ -1,0 +1,2681 @@
+{
+  "frozen_at_utc": "2026-09-26T11:42:17.809977+00:00",
+  "fingerprint": "0be230901dfb0f2b053b869722c5d87c6a52861f2bb1b19cc1d7c9a1919acf94",
+  "protocol": {
+    "study_id": "guide3d-pilot-v1",
+    "data_scope": "acquired fluoroscopic phantom images",
+    "sources": {
+      "archive_url": "https://huggingface.co/datasets/airvlab/guide3d/resolve/1234a083c1b85a6f0cb84fb15b6a68c86044d253/guide3d.zip",
+      "archive_sha256": "90adb69e69ff8ec128130da33d390cd9b23c51e122d092229c549b1f33d3c236",
+      "annotation_url": "https://raw.githubusercontent.com/airvlab/guide3d/e034a71ca5cce0f5c64d67f6fc5302ce98d64481/data/annotations/raw.json",
+      "annotation_sha256": "5b6fa440c15ca66da276fe3619cd9122e5ab8d2ca662768c737e141991abdfc3",
+      "license": "CC-BY-NC-4.0"
+    },
+    "manifest": [
+      {
+        "case_id": "0-bca-angle-1:0000:camera1",
+        "acquisition_id": "0-bca-angle-1",
+        "frame_number": 0,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-1-2/000.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-angle-1:0000:camera2",
+        "acquisition_id": "0-bca-angle-1",
+        "frame_number": 0,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-1-1/000.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-angle-1:0043:camera1",
+        "acquisition_id": "0-bca-angle-1",
+        "frame_number": 43,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-1-2/043.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-angle-1:0043:camera2",
+        "acquisition_id": "0-bca-angle-1",
+        "frame_number": 43,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-1-1/043.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-angle-1:0087:camera1",
+        "acquisition_id": "0-bca-angle-1",
+        "frame_number": 87,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-1-2/087.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-angle-1:0087:camera2",
+        "acquisition_id": "0-bca-angle-1",
+        "frame_number": 87,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-1-1/087.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-angle-1:0130:camera1",
+        "acquisition_id": "0-bca-angle-1",
+        "frame_number": 130,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-1-2/130.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-angle-1:0130:camera2",
+        "acquisition_id": "0-bca-angle-1",
+        "frame_number": 130,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-1-1/130.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-angle-1:0174:camera1",
+        "acquisition_id": "0-bca-angle-1",
+        "frame_number": 174,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-1-2/174.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-angle-1:0174:camera2",
+        "acquisition_id": "0-bca-angle-1",
+        "frame_number": 174,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-1-1/174.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-angle-1:0217:camera1",
+        "acquisition_id": "0-bca-angle-1",
+        "frame_number": 217,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-1-2/217.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-angle-1:0217:camera2",
+        "acquisition_id": "0-bca-angle-1",
+        "frame_number": 217,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-1-1/217.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-angle-1:0261:camera1",
+        "acquisition_id": "0-bca-angle-1",
+        "frame_number": 261,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-1-2/261.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-angle-1:0261:camera2",
+        "acquisition_id": "0-bca-angle-1",
+        "frame_number": 261,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-1-1/261.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-angle-1:0304:camera1",
+        "acquisition_id": "0-bca-angle-1",
+        "frame_number": 304,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-1-2/304.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-angle-1:0304:camera2",
+        "acquisition_id": "0-bca-angle-1",
+        "frame_number": 304,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-1-1/304.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-angle-1:0348:camera1",
+        "acquisition_id": "0-bca-angle-1",
+        "frame_number": 348,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-1-2/348.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-angle-1:0348:camera2",
+        "acquisition_id": "0-bca-angle-1",
+        "frame_number": 348,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-1-1/348.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-angle-1:0391:camera1",
+        "acquisition_id": "0-bca-angle-1",
+        "frame_number": 391,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-1-2/391.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-angle-1:0391:camera2",
+        "acquisition_id": "0-bca-angle-1",
+        "frame_number": 391,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-1-1/391.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-angle-2:0000:camera1",
+        "acquisition_id": "0-bca-angle-2",
+        "frame_number": 0,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-2-2/000.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-2:0000:camera2",
+        "acquisition_id": "0-bca-angle-2",
+        "frame_number": 0,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-2-1/000.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-2:0028:camera1",
+        "acquisition_id": "0-bca-angle-2",
+        "frame_number": 28,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-2-2/028.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-2:0028:camera2",
+        "acquisition_id": "0-bca-angle-2",
+        "frame_number": 28,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-2-1/028.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-2:0055:camera1",
+        "acquisition_id": "0-bca-angle-2",
+        "frame_number": 55,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-2-2/055.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-2:0055:camera2",
+        "acquisition_id": "0-bca-angle-2",
+        "frame_number": 55,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-2-1/055.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-2:0083:camera1",
+        "acquisition_id": "0-bca-angle-2",
+        "frame_number": 83,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-2-2/083.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-2:0083:camera2",
+        "acquisition_id": "0-bca-angle-2",
+        "frame_number": 83,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-2-1/083.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-2:0111:camera1",
+        "acquisition_id": "0-bca-angle-2",
+        "frame_number": 111,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-2-2/111.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-2:0111:camera2",
+        "acquisition_id": "0-bca-angle-2",
+        "frame_number": 111,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-2-1/111.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-2:0138:camera1",
+        "acquisition_id": "0-bca-angle-2",
+        "frame_number": 138,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-2-2/138.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-2:0138:camera2",
+        "acquisition_id": "0-bca-angle-2",
+        "frame_number": 138,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-2-1/138.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-2:0166:camera1",
+        "acquisition_id": "0-bca-angle-2",
+        "frame_number": 166,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-2-2/166.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-2:0166:camera2",
+        "acquisition_id": "0-bca-angle-2",
+        "frame_number": 166,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-2-1/166.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-2:0194:camera1",
+        "acquisition_id": "0-bca-angle-2",
+        "frame_number": 194,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-2-2/194.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-2:0194:camera2",
+        "acquisition_id": "0-bca-angle-2",
+        "frame_number": 194,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-2-1/194.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-2:0221:camera1",
+        "acquisition_id": "0-bca-angle-2",
+        "frame_number": 221,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-2-2/221.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-2:0221:camera2",
+        "acquisition_id": "0-bca-angle-2",
+        "frame_number": 221,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-2-1/221.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-2:0249:camera1",
+        "acquisition_id": "0-bca-angle-2",
+        "frame_number": 249,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-2-2/249.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-2:0249:camera2",
+        "acquisition_id": "0-bca-angle-2",
+        "frame_number": 249,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-2-1/249.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-3:0000:camera1",
+        "acquisition_id": "0-bca-angle-3",
+        "frame_number": 0,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-3-2/000.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-3:0000:camera2",
+        "acquisition_id": "0-bca-angle-3",
+        "frame_number": 0,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-3-1/000.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-3:0031:camera1",
+        "acquisition_id": "0-bca-angle-3",
+        "frame_number": 31,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-3-2/031.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-3:0031:camera2",
+        "acquisition_id": "0-bca-angle-3",
+        "frame_number": 31,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-3-1/031.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-3:0063:camera1",
+        "acquisition_id": "0-bca-angle-3",
+        "frame_number": 63,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-3-2/063.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-3:0063:camera2",
+        "acquisition_id": "0-bca-angle-3",
+        "frame_number": 63,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-3-1/063.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-3:0094:camera1",
+        "acquisition_id": "0-bca-angle-3",
+        "frame_number": 94,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-3-2/094.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-3:0094:camera2",
+        "acquisition_id": "0-bca-angle-3",
+        "frame_number": 94,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-3-1/094.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-3:0126:camera1",
+        "acquisition_id": "0-bca-angle-3",
+        "frame_number": 126,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-3-2/126.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-3:0126:camera2",
+        "acquisition_id": "0-bca-angle-3",
+        "frame_number": 126,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-3-1/126.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-3:0157:camera1",
+        "acquisition_id": "0-bca-angle-3",
+        "frame_number": 157,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-3-2/157.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-3:0157:camera2",
+        "acquisition_id": "0-bca-angle-3",
+        "frame_number": 157,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-3-1/157.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-3:0189:camera1",
+        "acquisition_id": "0-bca-angle-3",
+        "frame_number": 189,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-3-2/189.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-3:0189:camera2",
+        "acquisition_id": "0-bca-angle-3",
+        "frame_number": 189,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-3-1/189.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-3:0220:camera1",
+        "acquisition_id": "0-bca-angle-3",
+        "frame_number": 220,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-3-2/220.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-3:0220:camera2",
+        "acquisition_id": "0-bca-angle-3",
+        "frame_number": 220,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-3-1/220.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-3:0252:camera1",
+        "acquisition_id": "0-bca-angle-3",
+        "frame_number": 252,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-3-2/252.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-3:0252:camera2",
+        "acquisition_id": "0-bca-angle-3",
+        "frame_number": 252,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-3-1/252.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-3:0283:camera1",
+        "acquisition_id": "0-bca-angle-3",
+        "frame_number": 283,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-3-2/283.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-3:0283:camera2",
+        "acquisition_id": "0-bca-angle-3",
+        "frame_number": 283,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-3-1/283.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-4:0000:camera1",
+        "acquisition_id": "0-bca-angle-4",
+        "frame_number": 0,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-4-2/000.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-4:0000:camera2",
+        "acquisition_id": "0-bca-angle-4",
+        "frame_number": 0,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-4-1/000.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-4:0034:camera1",
+        "acquisition_id": "0-bca-angle-4",
+        "frame_number": 34,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-4-2/034.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-4:0034:camera2",
+        "acquisition_id": "0-bca-angle-4",
+        "frame_number": 34,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-4-1/034.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-4:0069:camera1",
+        "acquisition_id": "0-bca-angle-4",
+        "frame_number": 69,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-4-2/069.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-4:0069:camera2",
+        "acquisition_id": "0-bca-angle-4",
+        "frame_number": 69,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-4-1/069.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-4:0103:camera1",
+        "acquisition_id": "0-bca-angle-4",
+        "frame_number": 103,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-4-2/103.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-4:0103:camera2",
+        "acquisition_id": "0-bca-angle-4",
+        "frame_number": 103,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-4-1/103.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-4:0137:camera1",
+        "acquisition_id": "0-bca-angle-4",
+        "frame_number": 137,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-4-2/137.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-4:0137:camera2",
+        "acquisition_id": "0-bca-angle-4",
+        "frame_number": 137,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-4-1/137.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-4:0172:camera1",
+        "acquisition_id": "0-bca-angle-4",
+        "frame_number": 172,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-4-2/172.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-4:0172:camera2",
+        "acquisition_id": "0-bca-angle-4",
+        "frame_number": 172,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-4-1/172.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-4:0206:camera1",
+        "acquisition_id": "0-bca-angle-4",
+        "frame_number": 206,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-4-2/206.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-4:0206:camera2",
+        "acquisition_id": "0-bca-angle-4",
+        "frame_number": 206,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-4-1/206.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-4:0240:camera1",
+        "acquisition_id": "0-bca-angle-4",
+        "frame_number": 240,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-4-2/240.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-4:0240:camera2",
+        "acquisition_id": "0-bca-angle-4",
+        "frame_number": 240,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-4-1/240.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-4:0275:camera1",
+        "acquisition_id": "0-bca-angle-4",
+        "frame_number": 275,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-4-2/275.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-4:0275:camera2",
+        "acquisition_id": "0-bca-angle-4",
+        "frame_number": 275,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-4-1/275.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-4:0309:camera1",
+        "acquisition_id": "0-bca-angle-4",
+        "frame_number": 309,
+        "camera": "camera1",
+        "image_path": "0-bca-angle-4-2/309.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-angle-4:0309:camera2",
+        "acquisition_id": "0-bca-angle-4",
+        "frame_number": 309,
+        "camera": "camera2",
+        "image_path": "0-bca-angle-4-1/309.png",
+        "fluid": 0,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-1:0000:camera1",
+        "acquisition_id": "0-bca-straight-1",
+        "frame_number": 0,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-1-2/000.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-straight-1:0000:camera2",
+        "acquisition_id": "0-bca-straight-1",
+        "frame_number": 0,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-1-1/000.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-straight-1:0023:camera1",
+        "acquisition_id": "0-bca-straight-1",
+        "frame_number": 23,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-1-2/023.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-straight-1:0023:camera2",
+        "acquisition_id": "0-bca-straight-1",
+        "frame_number": 23,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-1-1/023.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-straight-1:0047:camera1",
+        "acquisition_id": "0-bca-straight-1",
+        "frame_number": 47,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-1-2/047.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-straight-1:0047:camera2",
+        "acquisition_id": "0-bca-straight-1",
+        "frame_number": 47,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-1-1/047.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-straight-1:0070:camera1",
+        "acquisition_id": "0-bca-straight-1",
+        "frame_number": 70,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-1-2/070.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-straight-1:0070:camera2",
+        "acquisition_id": "0-bca-straight-1",
+        "frame_number": 70,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-1-1/070.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-straight-1:0094:camera1",
+        "acquisition_id": "0-bca-straight-1",
+        "frame_number": 94,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-1-2/094.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-straight-1:0094:camera2",
+        "acquisition_id": "0-bca-straight-1",
+        "frame_number": 94,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-1-1/094.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-straight-1:0117:camera1",
+        "acquisition_id": "0-bca-straight-1",
+        "frame_number": 117,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-1-2/117.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-straight-1:0117:camera2",
+        "acquisition_id": "0-bca-straight-1",
+        "frame_number": 117,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-1-1/117.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-straight-1:0141:camera1",
+        "acquisition_id": "0-bca-straight-1",
+        "frame_number": 141,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-1-2/141.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-straight-1:0141:camera2",
+        "acquisition_id": "0-bca-straight-1",
+        "frame_number": 141,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-1-1/141.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-straight-1:0164:camera1",
+        "acquisition_id": "0-bca-straight-1",
+        "frame_number": 164,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-1-2/164.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-straight-1:0164:camera2",
+        "acquisition_id": "0-bca-straight-1",
+        "frame_number": 164,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-1-1/164.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-straight-1:0188:camera1",
+        "acquisition_id": "0-bca-straight-1",
+        "frame_number": 188,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-1-2/188.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-straight-1:0188:camera2",
+        "acquisition_id": "0-bca-straight-1",
+        "frame_number": 188,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-1-1/188.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-straight-1:0211:camera1",
+        "acquisition_id": "0-bca-straight-1",
+        "frame_number": 211,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-1-2/211.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-straight-1:0211:camera2",
+        "acquisition_id": "0-bca-straight-1",
+        "frame_number": 211,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-1-1/211.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "development"
+      },
+      {
+        "case_id": "0-bca-straight-2:0000:camera1",
+        "acquisition_id": "0-bca-straight-2",
+        "frame_number": 0,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-2-2/000.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-2:0000:camera2",
+        "acquisition_id": "0-bca-straight-2",
+        "frame_number": 0,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-2-1/000.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-2:0036:camera1",
+        "acquisition_id": "0-bca-straight-2",
+        "frame_number": 36,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-2-2/036.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-2:0036:camera2",
+        "acquisition_id": "0-bca-straight-2",
+        "frame_number": 36,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-2-1/036.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-2:0072:camera1",
+        "acquisition_id": "0-bca-straight-2",
+        "frame_number": 72,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-2-2/072.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-2:0072:camera2",
+        "acquisition_id": "0-bca-straight-2",
+        "frame_number": 72,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-2-1/072.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-2:0108:camera1",
+        "acquisition_id": "0-bca-straight-2",
+        "frame_number": 108,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-2-2/108.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-2:0108:camera2",
+        "acquisition_id": "0-bca-straight-2",
+        "frame_number": 108,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-2-1/108.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-2:0144:camera1",
+        "acquisition_id": "0-bca-straight-2",
+        "frame_number": 144,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-2-2/144.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-2:0144:camera2",
+        "acquisition_id": "0-bca-straight-2",
+        "frame_number": 144,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-2-1/144.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-2:0179:camera1",
+        "acquisition_id": "0-bca-straight-2",
+        "frame_number": 179,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-2-2/179.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-2:0179:camera2",
+        "acquisition_id": "0-bca-straight-2",
+        "frame_number": 179,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-2-1/179.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-2:0215:camera1",
+        "acquisition_id": "0-bca-straight-2",
+        "frame_number": 215,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-2-2/215.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-2:0215:camera2",
+        "acquisition_id": "0-bca-straight-2",
+        "frame_number": 215,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-2-1/215.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-2:0251:camera1",
+        "acquisition_id": "0-bca-straight-2",
+        "frame_number": 251,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-2-2/251.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-2:0251:camera2",
+        "acquisition_id": "0-bca-straight-2",
+        "frame_number": 251,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-2-1/251.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-2:0287:camera1",
+        "acquisition_id": "0-bca-straight-2",
+        "frame_number": 287,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-2-2/287.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-2:0287:camera2",
+        "acquisition_id": "0-bca-straight-2",
+        "frame_number": 287,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-2-1/287.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-2:0323:camera1",
+        "acquisition_id": "0-bca-straight-2",
+        "frame_number": 323,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-2-2/323.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-2:0323:camera2",
+        "acquisition_id": "0-bca-straight-2",
+        "frame_number": 323,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-2-1/323.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-3:0000:camera1",
+        "acquisition_id": "0-bca-straight-3",
+        "frame_number": 0,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-3-2/000.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-3:0000:camera2",
+        "acquisition_id": "0-bca-straight-3",
+        "frame_number": 0,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-3-1/000.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-3:0028:camera1",
+        "acquisition_id": "0-bca-straight-3",
+        "frame_number": 28,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-3-2/028.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-3:0028:camera2",
+        "acquisition_id": "0-bca-straight-3",
+        "frame_number": 28,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-3-1/028.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-3:0056:camera1",
+        "acquisition_id": "0-bca-straight-3",
+        "frame_number": 56,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-3-2/056.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-3:0056:camera2",
+        "acquisition_id": "0-bca-straight-3",
+        "frame_number": 56,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-3-1/056.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-3:0084:camera1",
+        "acquisition_id": "0-bca-straight-3",
+        "frame_number": 84,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-3-2/084.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-3:0084:camera2",
+        "acquisition_id": "0-bca-straight-3",
+        "frame_number": 84,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-3-1/084.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-3:0112:camera1",
+        "acquisition_id": "0-bca-straight-3",
+        "frame_number": 112,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-3-2/112.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-3:0112:camera2",
+        "acquisition_id": "0-bca-straight-3",
+        "frame_number": 112,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-3-1/112.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-3:0141:camera1",
+        "acquisition_id": "0-bca-straight-3",
+        "frame_number": 141,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-3-2/141.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-3:0141:camera2",
+        "acquisition_id": "0-bca-straight-3",
+        "frame_number": 141,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-3-1/141.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-3:0169:camera1",
+        "acquisition_id": "0-bca-straight-3",
+        "frame_number": 169,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-3-2/169.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-3:0169:camera2",
+        "acquisition_id": "0-bca-straight-3",
+        "frame_number": 169,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-3-1/169.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-3:0197:camera1",
+        "acquisition_id": "0-bca-straight-3",
+        "frame_number": 197,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-3-2/197.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-3:0197:camera2",
+        "acquisition_id": "0-bca-straight-3",
+        "frame_number": 197,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-3-1/197.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-3:0225:camera1",
+        "acquisition_id": "0-bca-straight-3",
+        "frame_number": 225,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-3-2/225.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-3:0225:camera2",
+        "acquisition_id": "0-bca-straight-3",
+        "frame_number": 225,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-3-1/225.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-3:0253:camera1",
+        "acquisition_id": "0-bca-straight-3",
+        "frame_number": 253,
+        "camera": "camera1",
+        "image_path": "0-bca-straight-3-2/253.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "0-bca-straight-3:0253:camera2",
+        "acquisition_id": "0-bca-straight-3",
+        "frame_number": 253,
+        "camera": "camera2",
+        "image_path": "0-bca-straight-3-1/253.png",
+        "fluid": 0,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-1:0000:camera1",
+        "acquisition_id": "1-bca-angle-1",
+        "frame_number": 0,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-1-2/000.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "1-bca-angle-1:0000:camera2",
+        "acquisition_id": "1-bca-angle-1",
+        "frame_number": 0,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-1-1/000.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "1-bca-angle-1:0029:camera1",
+        "acquisition_id": "1-bca-angle-1",
+        "frame_number": 29,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-1-2/029.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "1-bca-angle-1:0029:camera2",
+        "acquisition_id": "1-bca-angle-1",
+        "frame_number": 29,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-1-1/029.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "1-bca-angle-1:0058:camera1",
+        "acquisition_id": "1-bca-angle-1",
+        "frame_number": 58,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-1-2/058.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "1-bca-angle-1:0058:camera2",
+        "acquisition_id": "1-bca-angle-1",
+        "frame_number": 58,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-1-1/058.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "1-bca-angle-1:0087:camera1",
+        "acquisition_id": "1-bca-angle-1",
+        "frame_number": 87,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-1-2/087.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "1-bca-angle-1:0087:camera2",
+        "acquisition_id": "1-bca-angle-1",
+        "frame_number": 87,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-1-1/087.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "1-bca-angle-1:0116:camera1",
+        "acquisition_id": "1-bca-angle-1",
+        "frame_number": 116,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-1-2/116.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "1-bca-angle-1:0116:camera2",
+        "acquisition_id": "1-bca-angle-1",
+        "frame_number": 116,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-1-1/116.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "1-bca-angle-1:0146:camera1",
+        "acquisition_id": "1-bca-angle-1",
+        "frame_number": 146,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-1-2/146.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "1-bca-angle-1:0146:camera2",
+        "acquisition_id": "1-bca-angle-1",
+        "frame_number": 146,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-1-1/146.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "1-bca-angle-1:0175:camera1",
+        "acquisition_id": "1-bca-angle-1",
+        "frame_number": 175,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-1-2/175.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "1-bca-angle-1:0175:camera2",
+        "acquisition_id": "1-bca-angle-1",
+        "frame_number": 175,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-1-1/175.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "1-bca-angle-1:0204:camera1",
+        "acquisition_id": "1-bca-angle-1",
+        "frame_number": 204,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-1-2/204.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "1-bca-angle-1:0204:camera2",
+        "acquisition_id": "1-bca-angle-1",
+        "frame_number": 204,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-1-1/204.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "1-bca-angle-1:0233:camera1",
+        "acquisition_id": "1-bca-angle-1",
+        "frame_number": 233,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-1-2/233.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "1-bca-angle-1:0233:camera2",
+        "acquisition_id": "1-bca-angle-1",
+        "frame_number": 233,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-1-1/233.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "1-bca-angle-1:0262:camera1",
+        "acquisition_id": "1-bca-angle-1",
+        "frame_number": 262,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-1-2/262.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "1-bca-angle-1:0262:camera2",
+        "acquisition_id": "1-bca-angle-1",
+        "frame_number": 262,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-1-1/262.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "development"
+      },
+      {
+        "case_id": "1-bca-angle-2:0000:camera1",
+        "acquisition_id": "1-bca-angle-2",
+        "frame_number": 0,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-2-2/000.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-2:0000:camera2",
+        "acquisition_id": "1-bca-angle-2",
+        "frame_number": 0,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-2-1/000.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-2:0041:camera1",
+        "acquisition_id": "1-bca-angle-2",
+        "frame_number": 41,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-2-2/041.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-2:0041:camera2",
+        "acquisition_id": "1-bca-angle-2",
+        "frame_number": 41,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-2-1/041.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-2:0082:camera1",
+        "acquisition_id": "1-bca-angle-2",
+        "frame_number": 82,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-2-2/082.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-2:0082:camera2",
+        "acquisition_id": "1-bca-angle-2",
+        "frame_number": 82,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-2-1/082.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-2:0123:camera1",
+        "acquisition_id": "1-bca-angle-2",
+        "frame_number": 123,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-2-2/123.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-2:0123:camera2",
+        "acquisition_id": "1-bca-angle-2",
+        "frame_number": 123,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-2-1/123.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-2:0164:camera1",
+        "acquisition_id": "1-bca-angle-2",
+        "frame_number": 164,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-2-2/164.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-2:0164:camera2",
+        "acquisition_id": "1-bca-angle-2",
+        "frame_number": 164,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-2-1/164.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-2:0206:camera1",
+        "acquisition_id": "1-bca-angle-2",
+        "frame_number": 206,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-2-2/206.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-2:0206:camera2",
+        "acquisition_id": "1-bca-angle-2",
+        "frame_number": 206,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-2-1/206.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-2:0247:camera1",
+        "acquisition_id": "1-bca-angle-2",
+        "frame_number": 247,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-2-2/247.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-2:0247:camera2",
+        "acquisition_id": "1-bca-angle-2",
+        "frame_number": 247,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-2-1/247.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-2:0288:camera1",
+        "acquisition_id": "1-bca-angle-2",
+        "frame_number": 288,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-2-2/288.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-2:0288:camera2",
+        "acquisition_id": "1-bca-angle-2",
+        "frame_number": 288,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-2-1/288.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-2:0329:camera1",
+        "acquisition_id": "1-bca-angle-2",
+        "frame_number": 329,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-2-2/329.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-2:0329:camera2",
+        "acquisition_id": "1-bca-angle-2",
+        "frame_number": 329,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-2-1/329.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-2:0370:camera1",
+        "acquisition_id": "1-bca-angle-2",
+        "frame_number": 370,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-2-2/370.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-2:0370:camera2",
+        "acquisition_id": "1-bca-angle-2",
+        "frame_number": 370,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-2-1/370.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-3:0000:camera1",
+        "acquisition_id": "1-bca-angle-3",
+        "frame_number": 0,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-3-2/000.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-3:0000:camera2",
+        "acquisition_id": "1-bca-angle-3",
+        "frame_number": 0,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-3-1/000.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-3:0029:camera1",
+        "acquisition_id": "1-bca-angle-3",
+        "frame_number": 29,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-3-2/029.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-3:0029:camera2",
+        "acquisition_id": "1-bca-angle-3",
+        "frame_number": 29,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-3-1/029.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-3:0057:camera1",
+        "acquisition_id": "1-bca-angle-3",
+        "frame_number": 57,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-3-2/057.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-3:0057:camera2",
+        "acquisition_id": "1-bca-angle-3",
+        "frame_number": 57,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-3-1/057.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-3:0086:camera1",
+        "acquisition_id": "1-bca-angle-3",
+        "frame_number": 86,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-3-2/086.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-3:0086:camera2",
+        "acquisition_id": "1-bca-angle-3",
+        "frame_number": 86,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-3-1/086.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-3:0115:camera1",
+        "acquisition_id": "1-bca-angle-3",
+        "frame_number": 115,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-3-2/115.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-3:0115:camera2",
+        "acquisition_id": "1-bca-angle-3",
+        "frame_number": 115,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-3-1/115.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-3:0143:camera1",
+        "acquisition_id": "1-bca-angle-3",
+        "frame_number": 143,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-3-2/143.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-3:0143:camera2",
+        "acquisition_id": "1-bca-angle-3",
+        "frame_number": 143,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-3-1/143.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-3:0172:camera1",
+        "acquisition_id": "1-bca-angle-3",
+        "frame_number": 172,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-3-2/172.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-3:0172:camera2",
+        "acquisition_id": "1-bca-angle-3",
+        "frame_number": 172,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-3-1/172.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-3:0201:camera1",
+        "acquisition_id": "1-bca-angle-3",
+        "frame_number": 201,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-3-2/201.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-3:0201:camera2",
+        "acquisition_id": "1-bca-angle-3",
+        "frame_number": 201,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-3-1/201.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-3:0229:camera1",
+        "acquisition_id": "1-bca-angle-3",
+        "frame_number": 229,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-3-2/229.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-3:0229:camera2",
+        "acquisition_id": "1-bca-angle-3",
+        "frame_number": 229,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-3-1/229.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-3:0258:camera1",
+        "acquisition_id": "1-bca-angle-3",
+        "frame_number": 258,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-3-2/258.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-3:0258:camera2",
+        "acquisition_id": "1-bca-angle-3",
+        "frame_number": 258,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-3-1/258.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-4:0000:camera1",
+        "acquisition_id": "1-bca-angle-4",
+        "frame_number": 0,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-4-2/000.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-4:0000:camera2",
+        "acquisition_id": "1-bca-angle-4",
+        "frame_number": 0,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-4-1/000.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-4:0038:camera1",
+        "acquisition_id": "1-bca-angle-4",
+        "frame_number": 38,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-4-2/038.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-4:0038:camera2",
+        "acquisition_id": "1-bca-angle-4",
+        "frame_number": 38,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-4-1/038.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-4:0075:camera1",
+        "acquisition_id": "1-bca-angle-4",
+        "frame_number": 75,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-4-2/075.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-4:0075:camera2",
+        "acquisition_id": "1-bca-angle-4",
+        "frame_number": 75,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-4-1/075.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-4:0113:camera1",
+        "acquisition_id": "1-bca-angle-4",
+        "frame_number": 113,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-4-2/113.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-4:0113:camera2",
+        "acquisition_id": "1-bca-angle-4",
+        "frame_number": 113,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-4-1/113.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-4:0150:camera1",
+        "acquisition_id": "1-bca-angle-4",
+        "frame_number": 150,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-4-2/150.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-4:0150:camera2",
+        "acquisition_id": "1-bca-angle-4",
+        "frame_number": 150,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-4-1/150.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-4:0188:camera1",
+        "acquisition_id": "1-bca-angle-4",
+        "frame_number": 188,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-4-2/188.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-4:0188:camera2",
+        "acquisition_id": "1-bca-angle-4",
+        "frame_number": 188,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-4-1/188.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-4:0225:camera1",
+        "acquisition_id": "1-bca-angle-4",
+        "frame_number": 225,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-4-2/225.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-4:0225:camera2",
+        "acquisition_id": "1-bca-angle-4",
+        "frame_number": 225,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-4-1/225.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-4:0263:camera1",
+        "acquisition_id": "1-bca-angle-4",
+        "frame_number": 263,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-4-2/263.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-4:0263:camera2",
+        "acquisition_id": "1-bca-angle-4",
+        "frame_number": 263,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-4-1/263.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-4:0300:camera1",
+        "acquisition_id": "1-bca-angle-4",
+        "frame_number": 300,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-4-2/300.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-4:0300:camera2",
+        "acquisition_id": "1-bca-angle-4",
+        "frame_number": 300,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-4-1/300.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-4:0338:camera1",
+        "acquisition_id": "1-bca-angle-4",
+        "frame_number": 338,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-4-2/338.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-4:0338:camera2",
+        "acquisition_id": "1-bca-angle-4",
+        "frame_number": 338,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-4-1/338.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-5:0000:camera1",
+        "acquisition_id": "1-bca-angle-5",
+        "frame_number": 0,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-5-2/000.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-5:0000:camera2",
+        "acquisition_id": "1-bca-angle-5",
+        "frame_number": 0,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-5-1/000.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-5:0067:camera1",
+        "acquisition_id": "1-bca-angle-5",
+        "frame_number": 67,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-5-2/067.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-5:0067:camera2",
+        "acquisition_id": "1-bca-angle-5",
+        "frame_number": 67,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-5-1/067.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-5:0133:camera1",
+        "acquisition_id": "1-bca-angle-5",
+        "frame_number": 133,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-5-2/133.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-5:0133:camera2",
+        "acquisition_id": "1-bca-angle-5",
+        "frame_number": 133,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-5-1/133.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-5:0200:camera1",
+        "acquisition_id": "1-bca-angle-5",
+        "frame_number": 200,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-5-2/200.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-5:0200:camera2",
+        "acquisition_id": "1-bca-angle-5",
+        "frame_number": 200,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-5-1/200.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-5:0266:camera1",
+        "acquisition_id": "1-bca-angle-5",
+        "frame_number": 266,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-5-2/266.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-5:0266:camera2",
+        "acquisition_id": "1-bca-angle-5",
+        "frame_number": 266,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-5-1/266.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-5:0333:camera1",
+        "acquisition_id": "1-bca-angle-5",
+        "frame_number": 333,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-5-2/333.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-5:0333:camera2",
+        "acquisition_id": "1-bca-angle-5",
+        "frame_number": 333,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-5-1/333.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-5:0399:camera1",
+        "acquisition_id": "1-bca-angle-5",
+        "frame_number": 399,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-5-2/399.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-5:0399:camera2",
+        "acquisition_id": "1-bca-angle-5",
+        "frame_number": 399,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-5-1/399.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-5:0466:camera1",
+        "acquisition_id": "1-bca-angle-5",
+        "frame_number": 466,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-5-2/466.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-5:0466:camera2",
+        "acquisition_id": "1-bca-angle-5",
+        "frame_number": 466,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-5-1/466.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-5:0532:camera1",
+        "acquisition_id": "1-bca-angle-5",
+        "frame_number": 532,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-5-2/532.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-5:0532:camera2",
+        "acquisition_id": "1-bca-angle-5",
+        "frame_number": 532,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-5-1/532.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-5:0599:camera1",
+        "acquisition_id": "1-bca-angle-5",
+        "frame_number": 599,
+        "camera": "camera1",
+        "image_path": "1-bca-angle-5-2/599.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-angle-5:0599:camera2",
+        "acquisition_id": "1-bca-angle-5",
+        "frame_number": 599,
+        "camera": "camera2",
+        "image_path": "1-bca-angle-5-1/599.png",
+        "fluid": 1,
+        "guidewire_type": "angle",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-straight-1:0000:camera1",
+        "acquisition_id": "1-bca-straight-1",
+        "frame_number": 0,
+        "camera": "camera1",
+        "image_path": "1-bca-straight-1-2/000.png",
+        "fluid": 1,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-straight-1:0000:camera2",
+        "acquisition_id": "1-bca-straight-1",
+        "frame_number": 0,
+        "camera": "camera2",
+        "image_path": "1-bca-straight-1-1/000.png",
+        "fluid": 1,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-straight-1:0027:camera1",
+        "acquisition_id": "1-bca-straight-1",
+        "frame_number": 27,
+        "camera": "camera1",
+        "image_path": "1-bca-straight-1-2/027.png",
+        "fluid": 1,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-straight-1:0027:camera2",
+        "acquisition_id": "1-bca-straight-1",
+        "frame_number": 27,
+        "camera": "camera2",
+        "image_path": "1-bca-straight-1-1/027.png",
+        "fluid": 1,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-straight-1:0054:camera1",
+        "acquisition_id": "1-bca-straight-1",
+        "frame_number": 54,
+        "camera": "camera1",
+        "image_path": "1-bca-straight-1-2/054.png",
+        "fluid": 1,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-straight-1:0054:camera2",
+        "acquisition_id": "1-bca-straight-1",
+        "frame_number": 54,
+        "camera": "camera2",
+        "image_path": "1-bca-straight-1-1/054.png",
+        "fluid": 1,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-straight-1:0080:camera1",
+        "acquisition_id": "1-bca-straight-1",
+        "frame_number": 80,
+        "camera": "camera1",
+        "image_path": "1-bca-straight-1-2/080.png",
+        "fluid": 1,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-straight-1:0080:camera2",
+        "acquisition_id": "1-bca-straight-1",
+        "frame_number": 80,
+        "camera": "camera2",
+        "image_path": "1-bca-straight-1-1/080.png",
+        "fluid": 1,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-straight-1:0107:camera1",
+        "acquisition_id": "1-bca-straight-1",
+        "frame_number": 107,
+        "camera": "camera1",
+        "image_path": "1-bca-straight-1-2/107.png",
+        "fluid": 1,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-straight-1:0107:camera2",
+        "acquisition_id": "1-bca-straight-1",
+        "frame_number": 107,
+        "camera": "camera2",
+        "image_path": "1-bca-straight-1-1/107.png",
+        "fluid": 1,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-straight-1:0134:camera1",
+        "acquisition_id": "1-bca-straight-1",
+        "frame_number": 134,
+        "camera": "camera1",
+        "image_path": "1-bca-straight-1-2/134.png",
+        "fluid": 1,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-straight-1:0134:camera2",
+        "acquisition_id": "1-bca-straight-1",
+        "frame_number": 134,
+        "camera": "camera2",
+        "image_path": "1-bca-straight-1-1/134.png",
+        "fluid": 1,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-straight-1:0161:camera1",
+        "acquisition_id": "1-bca-straight-1",
+        "frame_number": 161,
+        "camera": "camera1",
+        "image_path": "1-bca-straight-1-2/161.png",
+        "fluid": 1,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-straight-1:0161:camera2",
+        "acquisition_id": "1-bca-straight-1",
+        "frame_number": 161,
+        "camera": "camera2",
+        "image_path": "1-bca-straight-1-1/161.png",
+        "fluid": 1,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-straight-1:0187:camera1",
+        "acquisition_id": "1-bca-straight-1",
+        "frame_number": 187,
+        "camera": "camera1",
+        "image_path": "1-bca-straight-1-2/187.png",
+        "fluid": 1,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-straight-1:0187:camera2",
+        "acquisition_id": "1-bca-straight-1",
+        "frame_number": 187,
+        "camera": "camera2",
+        "image_path": "1-bca-straight-1-1/187.png",
+        "fluid": 1,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-straight-1:0214:camera1",
+        "acquisition_id": "1-bca-straight-1",
+        "frame_number": 214,
+        "camera": "camera1",
+        "image_path": "1-bca-straight-1-2/214.png",
+        "fluid": 1,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-straight-1:0214:camera2",
+        "acquisition_id": "1-bca-straight-1",
+        "frame_number": 214,
+        "camera": "camera2",
+        "image_path": "1-bca-straight-1-1/214.png",
+        "fluid": 1,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-straight-1:0241:camera1",
+        "acquisition_id": "1-bca-straight-1",
+        "frame_number": 241,
+        "camera": "camera1",
+        "image_path": "1-bca-straight-1-2/241.png",
+        "fluid": 1,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      },
+      {
+        "case_id": "1-bca-straight-1:0241:camera2",
+        "acquisition_id": "1-bca-straight-1",
+        "frame_number": 241,
+        "camera": "camera2",
+        "image_path": "1-bca-straight-1-1/241.png",
+        "fluid": 1,
+        "guidewire_type": "straight",
+        "split": "evaluation"
+      }
+    ],
+    "development_acquisitions": [
+      "0-bca-angle-1",
+      "0-bca-straight-1",
+      "1-bca-angle-1"
+    ],
+    "sampling": "10 rounded linspace positions among sorted paired frame IDs per acquisition",
+    "native_size": [
+      1024,
+      1024
+    ],
+    "working_size": [
+      512,
+      512
+    ],
+    "native_pixels_per_working_pixel": 2.0,
+    "image_resampling": "2x2 arithmetic mean, numpy.rint to uint8",
+    "coordinate_transform": "working row,column = (native row,column - 0.5) / 2",
+    "fov": "largest 4-connected component of working image >5; fill holes",
+    "roi": "FOV pixels with Euclidean distance >16 working pixels from outside FOV or image",
+    "raw_potential": "working intensity; outside FOV replaced by 255",
+    "local_contrast": "max(Gaussian(sigma=8,reflect)-image,0); outside FOV filled with FOV median before Gaussian; scale=max(ROI 99.5th percentile,1); rint(255*clip(contrast/scale,0,1)); outside FOV score=0",
+    "local_potential": "255 minus the same quantized local contrast used by the direct baseline",
+    "configurations": {
+      "ppi_local_default": [
+        3,
+        10,
+        0.75
+      ],
+      "ppi_local_relaxed": [
+        3,
+        10,
+        0.5
+      ],
+      "ppi_local_short": [
+        3,
+        5,
+        0.75
+      ]
+    },
+    "raw_ppi_configuration": [
+      3,
+      10,
+      0.75
+    ],
+    "budgets": [
+      0.0025,
+      0.005,
+      0.01,
+      0.02
+    ],
+    "primary_budget": 0.01,
+    "tolerance_working_pixels": 2,
+    "reference_sample_step_working_pixels": 0.25,
+    "selection": "finite positive scores; ceil(budget*ROI pixels); retain entire cutoff tie block",
+    "development_objective": "maximum acquisition-macro centerline coverage at nominal 1%; ties: lower actual area, then configuration insertion order",
+    "aggregation": "mean of views within acquisition, then equally weighted acquisitions",
+    "timing_scope": "observed pipeline wall times under concurrent workers; not controlled speed measurements",
+    "limitations": [
+      "phantom only",
+      "full tip-and-shaft annotations",
+      "no absence controls",
+      "one fluid/straight acquisition, held out",
+      "no claimed MICCAI reproduction"
+    ]
+  }
+}

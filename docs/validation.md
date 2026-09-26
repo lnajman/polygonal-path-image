@@ -87,9 +87,10 @@ distance five, the first convention selects source `(0, 0)` and the second
 selects `(0, 1)`. A reproducibility protocol should specify its convention.
 
 The paper's evaluation uses 108 clinical frames, centerline annotations,
-preprocessing, and ROC-based metrics. That corpus and evaluation material were
-not supplied. These two example images therefore support regression testing,
-not claims about clinical accuracy or reproduction of the published results.
+preprocessing, and ROC-based metrics. That corpus was private and is unavailable
+for this validation, as confirmed by Laurent Najman. These two example images
+therefore support regression testing, not claims about clinical accuracy or
+reproduction of the published results.
 
 ## Reproduce the checks
 
