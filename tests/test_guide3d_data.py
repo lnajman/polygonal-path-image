@@ -122,7 +122,9 @@ def test_safe_extraction_streams_selected_files(tmp_path):
         safe_extract(archive, root, max_bytes=1)
 
 
-@pytest.mark.parametrize("name", ["../escape", "/absolute", "C:/absolute", "dir\\escape"])
+# Windows zipfile normalizes backslashes to slashes before extraction. Use
+# traversal so the member remains unsafe after that platform normalization.
+@pytest.mark.parametrize("name", ["../escape", "/absolute", "C:/absolute", "..\\escape"])
 def test_safe_extraction_rejects_unsafe_paths(tmp_path, name):
     archive = make_archive(tmp_path / "data.zip", [(name, b"a")])
     with pytest.raises(ValueError):
