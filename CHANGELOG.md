@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- Added a reproducible synthetic benchmark with continuous reference curves,
+  explicit selection budgets, noise-only controls, and an image-darkness baseline.
+- Added independent geometry/metric tests and a runnable parameter tutorial,
+  including saved figures, source hashes, full measurements, and notebook CI.
+
 ## 0.1.0
 
 - Initial Python 3 package based on the FinalVersion implementation by

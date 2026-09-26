@@ -96,6 +96,18 @@ Use `--input path/to/image.png` to process a grayscale conversion of another ima
 
 ![Synthetic input, minimum path costs, and filtered path votes](https://raw.githubusercontent.com/lnajman/polygonal-path-image/main/docs/assets/synthetic-example.png)
 
+## Synthetic benchmark and parameter tutorial
+
+The [synthetic benchmark](https://github.com/lnajman/polygonal-path-image/blob/main/docs/benchmarks/README.md)
+measures centerline coverage, false-positive pixels, localization, and runtime
+on generated curves with known geometry. It compares path voting with simple
+image darkness across directions, curvature, contrast, noise, and parameter
+choices. Noise-only controls make the limits of fixed selection budgets visible.
+
+Open the [executed tutorial notebook](https://github.com/lnajman/polygonal-path-image/blob/main/examples/ppi_synthetic_benchmark.ipynb)
+to inspect the results or rerun the examples. These benchmark and tutorial files
+are available in the repository; they use the released `0.1.0` computation API.
+
 ## Development
 
 ```sh

@@ -13,3 +13,5 @@ dist/
 htmlcov/
 .DS_Store
 example-output/
+benchmark-output/
+.ipynb_checkpoints/
