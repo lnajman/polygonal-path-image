@@ -1,9 +1,12 @@
 # Guide3D acquired-image pilot
 
-This study evaluates the released PPI computation API on acquired fluoroscopic
-images of guidewires in a vascular phantom. It tests whether polygonal-path
-voting improves guidewire localization over direct image scores in the presence
-of overlapping tubing and other image structures.
+PPI enhances line structures generally. This study applies the released PPI
+computation API to acquired fluoroscopic images of a vascular phantom, where
+Guide3D annotates the guidewire but not every visible line. It measures recovery
+of that annotated guidewire and the spatial distribution of selected pixels.
+Selections elsewhere are **unclassified for the general line-enhancement task**:
+the annotations cannot establish whether they are other valid lines or unwanted
+responses. This is not a complete evaluation of all-line detection precision.
 
 The MICCAI 2012 clinical dataset was private and is unavailable for this study,
 as confirmed by Laurent Najman. Guide3D provides a separate, reproducible phantom
@@ -24,15 +27,18 @@ image hashes, environment, source hashes and the complete dataset audit.
 At the predefined **1% nominal ROI-area budget**, development-selected local PPI
 reaches **89.1% centerline coverage**, compared with **83.3% for direct local
 contrast**, a gain of **5.9 percentage points**. Actual selected areas are very
-close: **1.005% and 1.012%**. This gain comes with lower selected-pixel precision
-(**17.3% versus 20.0%**) and more remote selections. The result is a coverage–
-selectivity tradeoff, not general superiority.
+close: **1.005% and 1.012%**. Of the selected pixels, **17.3% and 20.0%**,
+respectively, lie near the annotated guidewire. These fractions describe
+association with this one labeled structure. They do **not** show that PPI has
+lower precision for enhancing all lines, because other lines are not labeled.
+The coverage gain is established for the annotated guidewire; general line
+selectivity remains unmeasured by this dataset.
 
 Every number below is a mean of the ten acquisition means, each based on twenty
 views. Coverage refers only to reference arclength inside the evaluation ROI.
 The tolerance is four native pixels.
 
-| Method | Coverage | Selected-pixel precision | Off-reference rate | Actual selected area |
+| Method | Guidewire coverage | Selected near guidewire | Off-guidewire rate | Actual selected area |
 | --- | ---: | ---: | ---: | ---: |
 | Raw darkness | 42.8% | 8.8% | 1.071% | 1.167% |
 | Direct local contrast | 83.3% | 20.0% | 0.815% | 1.012% |
@@ -47,26 +53,28 @@ by 6.5 and 5.8 percentage points. The paired coverage difference ranges from
 from 82.1% to 97.4%, versus 71.8% to 96.6% for local contrast. These are observed
 ranges, not statistical confidence intervals.
 
-![Coverage and off-reference selections against actual selected area](assets/budget_curves.png)
+![Annotated-guidewire coverage and off-guidewire selections against actual selected area](assets/budget_curves.png)
 
 ![Primary coverage for each held-out acquisition](assets/acquisitions.png)
 
-Local-contrast preprocessing alone is a strong comparator: it exceeds both
-default PPI variants in mean coverage and precision. Relaxing the tortuosity
-filter improves this pilot’s PPI recovery, but does not justify changing the
-package default from this small study. The development scores were 69.7% for
-local PPI default, 87.0% for the relaxed setting and 56.2% for shorter paths.
+Local-contrast preprocessing alone is a useful comparator: it exceeds both
+default PPI variants in mean guidewire coverage and in the fraction selected
+near that guidewire. Relaxing the tortuosity filter improves this pilot’s
+guidewire recovery, but does not justify changing the package default from
+this small study. The development scores were 69.7% for local PPI default,
+87.0% for the relaxed setting and 56.2% for shorter paths.
 
-![Precision and off-reference rates with acquisition ranges](assets/selection_quality.png)
+![Selections near and away from the annotated guidewire, with acquisition ranges](assets/selection_quality.png)
 
-Mean reference-to-selection distance is **2.85 native pixels** for selected PPI
+Mean guidewire-to-selection distance is **2.85 native pixels** for selected PPI
 and **4.57** for local contrast, consistent with fewer missed curve sections.
-Conversely, mean selection-to-reference distance is **211.47 native pixels**
-for selected PPI and **127.31** for local contrast: remote clutter remains a
-major limitation. These are acquisition averages of per-view mean distances,
+Mean selection-to-guidewire distance is **211.47 native pixels** for selected
+PPI and **127.31** for local contrast. This describes where the selected pixels
+lie relative to the guidewire; it does not identify them as clutter or erroneous
+line responses. These are acquisition averages of per-view mean distances,
 not distances pooled across all points.
 
-![Directed mean localization distances in native pixels](assets/localization.png)
+![Directed mean distances between the annotated guidewire and selected pixels](assets/localization.png)
 
 The ROI retains **95.66%** of annotated arclength on average; acquisition means
 range from **95.24% to 96.31%**. The excluded samples count as neither recovered
@@ -76,10 +84,15 @@ frozen 260-view panel. The record contains 1,440 development measurements and
 An independent aggregation reproduced the table and verified all 260 decoded
 image hashes, all nine recorded source-file hashes and the compiled-kernel hash.
 
-The next methodological question is how to preserve the coverage gain while
-suppressing selections on other structures. Changes guided by these results
-should receive a new independent evaluation; repeatedly tuning against these
-same held-out acquisitions would turn them into development data.
+The [complete-reference multi-line study](../multiline/README.md) now tests
+whether PPI recovers all generated lines, including weak lines near stronger
+ones, while suppressing non-line background. Other visible lines in Guide3D
+should not be treated as errors merely because its annotations omit them.
+Changes guided by these results should receive a new independent evaluation;
+repeatedly tuning against these same held-out acquisitions would turn them into
+development data. The measured results, their stored metric keys and the frozen
+protocol are preserved; this report corrects their interpretation for PPI's
+general line-enhancement objective.
 
 ## Data audit
 
@@ -204,17 +217,22 @@ nearest pixel center belongs to the ROI. Retained reference length is the sum
 of those weights, an approximation to geometric clipping; vertices are never
 removed and rejoined across an excluded region.
 
-Selected-pixel precision is the fraction of selected ROI pixel centers within
-that tolerance of the complete continuous manual polyline. Off-reference rate
-is the number of selected ROI pixels farther than the tolerance, divided by
-all ROI pixels farther than the tolerance. The JSON retains the historical
-metric key `off_tube_false_positive_rate`; in this study these are
-**off-reference selections**, since other visible structures are not exhaustively
-labeled. Precision and coverage have different denominators and are not combined
+The **fraction selected near the guidewire** is the fraction of selected ROI
+pixel centers within that tolerance of its complete continuous manual polyline.
+The **off-guidewire rate** is the number of selected ROI pixels farther than
+the tolerance, divided by all ROI pixels farther than the tolerance. The JSON
+retains the historical metric keys `selected_pixel_precision` and
+`off_tube_false_positive_rate` for reproducibility. With these incomplete
+all-line annotations, those keys measure association with the annotated
+guidewire and selections outside its tolerance tube: they are **not general
+line-detection precision or false-positive rates**. Coverage and the fraction
+selected near the guidewire have different denominators and are not combined
 into an F1 score.
 
-Two directed mean and 95th-percentile distances expose both missed reference
-sections and remote selected pixels. They are untruncated Euclidean distances.
+Two directed mean and 95th-percentile distances describe recovery of the
+annotated guidewire and distance of selected pixels from it. Distance away
+from this annotation does not establish an error in general line enhancement.
+They are untruncated Euclidean distances.
 JSON stores working-pixel distances; figures and the notebook convert them to
 native pixels. Exact finite-segment distances and an exact KD-tree query are
 used; fixture tests compare the accelerated evaluator with the existing
@@ -291,12 +309,19 @@ python -m nbconvert --execute --to notebook \
 
 ## Interpretation and licensing
 
-This is a two-dimensional ranking study on a small fixed subset of acquired
-phantom images. It does not measure clinical safety, 3D reconstruction, temporal
-tracking, tip-only detection, or detection when no guidewire is present. The
+This is a two-dimensional ranking study relative to one annotated guidewire on
+a small fixed subset of acquired phantom images. It does not measure precision
+or false detections for all visible lines, clinical safety, 3D reconstruction,
+temporal tracking, tip-only detection, or detection when no guidewire is present. The
 same acquisition split must be respected in future development. Once these
 evaluation results are inspected, changes informed by them require another
 independent test set for an unbiased confirmatory claim.
+
+The [complete-reference multi-line study](../multiline/README.md) separately
+tests recovery of every generated line, including weak lines beside strong
+ones, with development-frozen thresholds and blank/noise controls. Its
+synthetic background selections have a complete declared reference, unlike
+off-guidewire selections in this acquired-image pilot.
 
 Guide3D is distributed under
 [CC BY-NC 4.0](https://huggingface.co/datasets/airvlab/guide3d), independently of

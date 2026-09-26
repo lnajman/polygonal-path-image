@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+- Added a complete-reference multi-line synthetic study with crossings, branches,
+  mixed widths, paired weak/strong lines, development-frozen thresholds, Frangi
+  and local-contrast comparisons, continuity metrics and blank/noise controls.
+- Corrected Guide3D interpretation: off-guidewire selections are unclassified
+  for all-line enhancement, not established false positives. Historical
+  measurements and the frozen acquisition protocol remain unchanged.
 - Added a Guide3D acquired-image phantom pilot with pinned data auditing,
   acquisition-separated development/evaluation, local-contrast comparisons,
   exact accelerated geometry metrics, scalar results and an executed notebook.

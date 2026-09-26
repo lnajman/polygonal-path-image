@@ -92,8 +92,12 @@ present. These controls motivate testing an absolute confidence or rejection
 criterion on separate development and evaluation data.
 
 The [Guide3D acquired-image pilot](guide3d/README.md) extends evaluation to
-annotated phantom images with clutter and overlapping structures. Target-absent
-acquired-image controls remain future work. The historical MICCAI 2012 clinical
+phantom images with overlapping structures and guidewire-only annotations.
+Other visible lines are unclassified for general line enhancement, so
+off-guidewire responses are not established false positives. The
+[complete-reference multi-line study](multiline/README.md) measures every
+generated line and uses development-frozen thresholds for absence controls.
+Target-absent acquired-image controls remain future work. The historical MICCAI 2012 clinical
 dataset was private and is unavailable for these studies. Neither
 these results nor their comparison with a simple intensity baseline establish
 MICCAI 2012 performance. Algorithm changes and new defaults should be assessed

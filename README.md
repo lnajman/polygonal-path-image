@@ -118,6 +118,22 @@ per-view results and an
 [executed notebook](https://github.com/lnajman/polygonal-path-image/blob/main/examples/ppi_guide3d_study.ipynb).
 The original MICCAI 2012 clinical dataset was private; this is a separate phantom
 study. Guide3D images remain outside the repository under their own license.
+Its annotations identify the guidewire, not every visible line. Responses away
+from that guidewire are therefore unclassified for general line enhancement;
+they are not established false detections.
+
+## Complete-reference multi-line study
+
+The [multi-line benchmark](https://github.com/lnajman/polygonal-path-image/blob/main/docs/benchmarks/multiline/README.md)
+labels every generated line, including crossings, branches, mixed widths and
+weak lines beside strong ones. It compares unchanged PPI with darkness, local
+contrast and Frangi, using development-frozen thresholds and separate
+evaluation orientations/noise seeds. Per-line coverage, continuity and
+selection outside all line supports test recovery of the full set of lines.
+Blank and noise-only controls are evaluated at the same frozen thresholds.
+The [executed companion](https://github.com/lnajman/polygonal-path-image/blob/main/examples/ppi_multiline_study.ipynb)
+provides inspectable results. This is a controlled synthetic study, not clinical
+validation or a reproduction of MICCAI 2012.
 
 ## Development
 

@@ -7,6 +7,8 @@ Run from a checkout with NumPy and Matplotlib installed::
 Each acquisition receives equal weight. Within an acquisition, each selected
 2D view receives equal weight. A displayed range is the observed range of
 acquisition means, never a confidence interval or a pooled-frame percentile.
+Only the guidewire is annotated. Selections away from it are unclassified for
+general line enhancement, not established false detections of other lines.
 """
 
 from __future__ import annotations
@@ -162,7 +164,7 @@ def _decorate(fig, title, rows, *, note):
 
 
 def plot_budget_curves(report):
-    """Compare coverage and off-reference rate against the actual area selected."""
+    """Compare guidewire coverage and off-guidewire selection against area."""
     rows = report["evaluation"]["rows"]
     methods = methods_in(rows)
     budgets = sorted({row["budget_fraction"] for row in rows})
@@ -191,9 +193,9 @@ def plot_budget_curves(report):
                 markerfacecolor="none",
                 markeredgecolor=color,
             )
-    axes[0].set_ylabel("Reference arclength covered (%)")
+    axes[0].set_ylabel("Annotated guidewire covered (%)")
     axes[0].set_ylim(0, 100)
-    axes[1].set_ylabel("Off-reference ROI pixels selected (%)")
+    axes[1].set_ylabel("Off-guidewire ROI pixels selected (%)")
     axes[1].set_ylim(bottom=0)
     for ax in axes:
         ax.set_xlabel("Actual selected ROI area (%)")
@@ -210,9 +212,9 @@ def plot_budget_curves(report):
     )
     _decorate(
         fig,
-        "Guide3D: coverage and off-reference selection",
+        "Guide3D: guidewire coverage and off-guidewire selection",
         rows,
-        note="Points: nominal area budgets 0.25%, 0.5%, 1%, 2%; open rings: 1%. Complete cutoff ties are included.\nCoverage uses a 4-native-pixel tolerance. Lines connect measured operating points; they are not fitted curves.",
+        note="Points: nominal area budgets 0.25%, 0.5%, 1%, 2%; open rings: 1%. Complete cutoff ties are included.\nCoverage uses a 4-native-pixel tolerance. Lines connect measured operating points; they are not fitted curves.\nOnly the guidewire is annotated; selections elsewhere are unclassified for general line enhancement.",
     )
     fig.subplots_adjust(left=0.075, right=0.98, bottom=0.17, top=0.74, wspace=0.30)
     return fig
@@ -258,10 +260,10 @@ def plot_acquisitions(report, budget_fraction=PRIMARY_BUDGET):
                 fontsize=11,
             )
     colorbar = fig.colorbar(graphic, ax=ax, fraction=0.035, pad=0.035)
-    colorbar.set_label("Reference arclength covered (%)")
+    colorbar.set_label("Annotated guidewire covered (%)")
     _decorate(
         fig,
-        f"Guide3D: coverage by acquisition at {100 * budget_fraction:g}% nominal area",
+        f"Guide3D: guidewire coverage by acquisition at {100 * budget_fraction:g}% nominal area",
         rows,
         note="Each cell averages 20 selected 2D views (10 paired frames). Tolerance: 4 native pixels.\nAcquisition IDs retain the source's fluid/wire labels. The fluid/straight condition has one held-out acquisition.",
     )
@@ -300,39 +302,44 @@ def _summary_plot(report, specifications, title, note, *, budget_fraction=PRIMAR
 
 
 def plot_precision(report, budget_fraction=PRIMARY_BUDGET):
-    """Keep precision and off-reference rate's different denominators explicit."""
+    """Show guidewire association; other lines have no labels in this study.
+
+    The function name and stored metric keys are retained for compatibility.
+    They do not make the measurements precision or false-positive rates for
+    general line enhancement.
+    """
     return _summary_plot(
         report,
         [
-            ("selected_pixel_precision", "Selected pixels within tolerance (%)", 100, 100),
-            ("off_tube_false_positive_rate", "Off-reference ROI pixels selected (%)", 100, None),
+            ("selected_pixel_precision", "Selected pixels near guidewire (%)", 100, 100),
+            ("off_tube_false_positive_rate", "Off-guidewire ROI pixels selected (%)", 100, None),
         ],
-        f"Guide3D: selection quality at {100 * budget_fraction:g}% nominal area",
-        "Points: mean of acquisition means. Lines: observed minimum–maximum acquisition means, not confidence intervals.\nLeft denominator: selected pixels. Right denominator: all ROI pixels outside the 4-native-pixel reference tube.\nOff-reference includes any visible structure absent from the annotation; it is not an anatomical diagnosis.",
+        f"Guide3D: selection relative to the guidewire at {100 * budget_fraction:g}% nominal area",
+        "Points: mean of acquisition means. Lines: observed minimum–maximum acquisition means, not confidence intervals.\nLeft denominator: all selected pixels. Right: ROI pixels outside the 4-native-pixel guidewire tube.\nSelections outside this annotation are unclassified; these are not all-line precision or false-positive rates.",
         budget_fraction=budget_fraction,
     )
 
 
 def plot_localization(report, budget_fraction=PRIMARY_BUDGET):
-    """Show directional mean distances in native image pixels."""
+    """Show distances to the guidewire, not errors against all visible lines."""
     return _summary_plot(
         report,
         [
             (
                 "centerline_to_prediction_mean_distance",
-                "Reference → selected pixels (native px)",
+                "Guidewire → selected pixels (native px)",
                 NATIVE_SCALE,
                 None,
             ),
             (
                 "prediction_to_centerline_mean_distance",
-                "Selected pixels → reference (native px)",
+                "Selected pixels → guidewire (native px)",
                 NATIVE_SCALE,
                 None,
             ),
         ],
-        f"Guide3D: mean localization distances at {100 * budget_fraction:g}% nominal area",
-        "Points: mean of acquisition means. Lines: observed minimum–maximum acquisition means, not confidence intervals.\nDistances use native 1024×1024 pixel units (2 × working-grid distances); no physical calibration is assumed.\nThe two directions have different populations. These are means, not a symmetric curve distance or a pooled P95.",
+        f"Guide3D: mean distances to the guidewire at {100 * budget_fraction:g}% nominal area",
+        "Points: mean of acquisition means. Lines: observed minimum–maximum acquisition means, not confidence intervals.\nNative 1024×1024 pixel units (2 × working-grid distances); no physical calibration. Means are not a pooled P95.\nOnly the guidewire is annotated; distance away from it does not establish a false response to a line.",
         budget_fraction=budget_fraction,
     )
 
